@@ -14,3 +14,6 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
     write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us 20000
+
+    # Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1

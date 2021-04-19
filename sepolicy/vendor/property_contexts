@@ -85,3 +85,5 @@ vendor.vold.serialno                  u:object_r:oppo_debug_prop:s0
 ro.build.version.ota                  u:object_r:oppo_debug_prop:s0
 ro.vendor.ril.svlte1x		      u:object_r:oppo_debug_prop:s0
 ro.vendor.ril.svdo		      u:object_r:oppo_debug_prop:s0
+
+vendor.powerhal.                   u:object_r:vendor_power_prop:s0

@@ -9,3 +9,31 @@ allow hal_power_default appdomain:process { getsched setsched };
 allow hal_power_default self:capability sys_nice;
 allow hal_power_default system_server:process setsched;
 allow hal_power_default proc:{ file lnk_file } rw_file_perms;
+
+allow hal_power_default {
+  sysfs_devfreq
+  sysfs_msm_subsys
+}:dir search;
+
+allow hal_power_default {
+  cgroup
+  proc
+  proc_sched
+  sysfs_devfreq
+  sysfs_devices_system_cpu
+  sysfs_graphics
+  sysfs_kgsl
+  sysfs_msm_subsys
+  sysfs_scsi_host
+}:{
+  file
+  lnk_file
+} rw_file_perms;
+
+allow hal_power_default device_latency:chr_file rw_file_perms;
+
+# Rule for hal_power_default to access graphics composer process
+unix_socket_connect(hal_power_default, pps, hal_graphics_composer_default);
+
+# To get/set powerhal state property
+set_prop(hal_power_default, vendor_power_prop)

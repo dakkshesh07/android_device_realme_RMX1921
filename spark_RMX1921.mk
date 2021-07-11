@@ -8,7 +8,7 @@
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GAPPS := true
+#WITH_GAPPS := true
 WITH_FOD_ANIMATIONS := true
 TARGET_USES_BLUR := true
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
@@ -21,6 +21,8 @@ PRODUCT_DEVICE := RMX1921
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_NAME := spark_RMX1921
 PRODUCT_MODEL := Realme XT
+#Official
+SPARK_BUILD_TYPE := OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 

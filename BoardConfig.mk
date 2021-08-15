@@ -1,5 +1,5 @@
 #
-# Copyright 2021 Project 404
+# Copyright 2021 SparkOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -53,14 +53,13 @@ BOARD_KERNEL_PAGESIZE := 4096
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/realme/RMX1921
 TARGET_KERNEL_CONFIG := RMX1921_defconfig
-TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_USE_LATEST_CLANG := true
-TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_VERSION := neutron
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS += AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-neutron/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 TARGET_KERNEL_CROSS_COMPILE_ARM32 := arm-linux-gnueabi-
 

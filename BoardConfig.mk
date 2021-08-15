@@ -58,7 +58,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_USE_LATEST_CLANG := true
 TARGET_KERNEL_CLANG_VERSION := neutron
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
-TARGET_KERNEL_ADDITIONAL_FLAGS += AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
+TARGET_KERNEL_ADDITIONAL_FLAGS += AS=llvm-as AR=llvm-ar NM=llvm-nm LD=ld.lld STRIP=llvm-strip OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump OBJSIZE=llvm-size HOSTCC=clang HOSTCXX=clang++ HOSTAR=llvm-ar HOSTLD=ld.lld
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-neutron/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 TARGET_KERNEL_CROSS_COMPILE_ARM32 := arm-linux-gnueabi-

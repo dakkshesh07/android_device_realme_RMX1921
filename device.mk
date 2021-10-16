@@ -170,9 +170,6 @@ PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.realme_sdm710 \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
-PRODUCT_COPY_FILES += \
-    vendor/spark/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:vendor/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
-
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
@@ -244,8 +241,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.realme_sdm710
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_PACKAGES += \
@@ -466,8 +463,8 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 # Wlan
 PRODUCT_PACKAGES += \

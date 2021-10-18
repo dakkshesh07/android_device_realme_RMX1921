@@ -5278,6 +5278,6 @@ setprop persist.vendor.mmi.misc_dev_path $real_path
 
     if echo "$available_governors" | grep schedutil; then
        echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-       echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+       echo "schedutil" > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
        setprop sys.use_fifo_ui 1
     fi

@@ -3,6 +3,7 @@ allow platform_app sysfs_graphics:dir search;
 
 get_prop(platform_app, oppo_debug_prop);
 get_prop(platform_app, boottime_prop);
+get_prop(platform_app, sensors_prop);
 
 allow platform_app sysfs_battery_supply:dir search;
 allow platform_app sysfs_battery_supply:file { getattr open read };
@@ -11,4 +12,3 @@ allow platform_app sysfs_kgsl:file { getattr open read };
 allow platform_app hal_dms_hwservice:hwservice_manager find;
 allow platform_app hal_dms_default:binder { call transfer };
 allow platform_app vulkan_hal:file read;
-allow platform_app sensors_prop:file read;

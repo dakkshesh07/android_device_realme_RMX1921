@@ -166,9 +166,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapperextensions@1.1
 
 # Dexpreopt
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+PRODUCT_PROPERTY_OVERRIDES += \
+    pm.dexopt.boot=verify \
+    pm.dexopt.first-boot=verify \
+    pm.dexopt.install=speed-profile \
+    pm.dexopt.bg-dexopt=everything
 
 # Dolby
 PRODUCT_COPY_FILES += \

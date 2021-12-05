@@ -11,6 +11,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS := true
 WITH_FOD_ANIMATIONS := true
 TARGET_USES_BLUR := true
+TARGET_BUILD_LAWNCHAIR := true
 #Official
 SPARK_BUILD_TYPE := OFFICIAL
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)

@@ -1,3 +1,14 @@
+on init
+    # Update Fastchg FW
+    chmod 0660 /proc/fastchg_fw_update
+    chown system system /proc/fastchg_fw_update
+    write /proc/fastchg_fw_update 1
+
+    # Enable decimal charging
+    chmod 0666 /proc/ui_soc_decimal
+    chown system system /proc/ui_soc_decimal
+    write /proc/ui_soc_decimal 1
+
 on boot
     # Disable edge limit control interface
     chmod 0660 /proc/touchpanel/oplus_tp_limit_enable

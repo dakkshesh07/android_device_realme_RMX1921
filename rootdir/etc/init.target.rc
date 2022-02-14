@@ -164,7 +164,6 @@ on property:sys.shutdown.requested=*
 on property:sys.boot_completed=1
 
     # Uclamp tunings
-
     setprop kernel.sched_util_clamp_min_rt_default 500
 
     #top-app
@@ -387,6 +386,16 @@ service thermal-engine /system/vendor/bin/thermal-engine
 #   user root
 #   group gps system qcom_diag diag log inet net_raw
 #   disabled
+
+service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.display.composer-service
+    override
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    socket pps stream 0660 system system
+    writepid /dev/cpuset/foreground/tasks
 
 #ifndef OPLUS_BUG_COMPATIBILITY
 #//ZhangPan@CONNECTIVITY.WIFI.BASIC.LOG.1072015,2016/08/03, Remove for wifi log enhance function

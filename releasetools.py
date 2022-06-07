@@ -38,4 +38,18 @@ def OTA_InstallEnd(info):
   info.script.Print("Patching firmware images...")
   AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
   AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
+  info.script.Print("Remounting vendor/odm")
+  info.script.AppendExtra('ifelse(is_mounted("/vendor"), unmount("/vendor"));');
+  info.script.AppendExtra('ifelse(is_mounted("/odm"), unmount("/odm"));');
+  info.script.Mount("/vendor")
+  info.script.Mount("/odm")
+  info.script.Print("Running Unified Script")
+  RunCustomScript(info, "unified_script.sh", "")
+  info.script.Print("Unmounting Vendor/ODM")
+  info.script.Unmount("/vendor")
+  info.script.Unmount("/odm")
   return
+  
+def RunCustomScript(info, name, arg):
+  info.script.AppendExtra(('run_program("/tmp/install/bin/%s", "%s");' % (name, arg)))
+  return  

@@ -4,7 +4,17 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
- 
+
+# Get device codename
+OPLUS_PROJECT=$(getprop "ro.boot.prjname")
+
+# Let only hardware specific fingerprint firmware survive
+if [ "$OPLUS_PROJECT" = "18621" ] || [ "$OPLUS_PROJECT" = "18691" ]; then
+   rm -r /odm/vendor/firmware/*goodix*
+else
+   rm -r /odm/vendor/firmware/*a_fp*
+fi
+
 # Dalvik heap
 if grep MemTotal /proc/meminfo | awk '{print $2 / 1024}' < 4000; then
    # Dalvik heap configs for 4GB variants

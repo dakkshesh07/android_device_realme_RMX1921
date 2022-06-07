@@ -423,4 +423,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/sdm710-common/sdm710-common-vendor.mk)
+$(call inherit-product, vendor/oplus/nicky/nicky-vendor.mk)

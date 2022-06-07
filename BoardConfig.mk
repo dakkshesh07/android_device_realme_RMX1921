@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/sdm710-common
+DEVICE_PATH := device/oplus/nicky
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
@@ -57,9 +57,7 @@ endif
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Fingerprint
-ifeq ($(TARGET_HAS_UDFPS),true)
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
-endif
+TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
@@ -71,8 +69,8 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm710
-TARGET_KERNEL_CONFIG := sdm670-perf_defconfig xiaomi/sdm710-common.config
+TARGET_KERNEL_SOURCE := kernel/oplus/sdm710
+TARGET_KERNEL_CONFIG := sdm670-perf_defconfig
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -93,7 +91,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
 BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
 
 # Platform
-BOARD_VENDOR := xiaomi
+BOARD_VENDOR := realme
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := sdm710
 
@@ -120,7 +118,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2021-04-01
+VENDOR_SECURITY_PATCH := 2022-04-05
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
@@ -160,4 +158,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/xiaomi/sdm710-common/BoardConfigVendor.mk
+include vendor/oplus/nicky/BoardConfigVendor.mk

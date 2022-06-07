@@ -1,4 +1,4 @@
-# Common device tree for Xiaomi SDM710 devices
+# Device tree for realme sdm710 devices
 
 ```
 #

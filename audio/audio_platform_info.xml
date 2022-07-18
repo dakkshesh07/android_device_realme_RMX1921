@@ -359,13 +359,10 @@
         <device name="SND_DEVICE_IN_HEADSET_MIC_VOICE_RECORD_TMGP" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AUDIO_PLAYBACK_EFFECT" backend="speaker" interface="TERT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_AUDIO_PLAYBACK_EFFECT" backend="headphones" interface="INT0_MI2S_RX"/>
+        <!--wei.li@MULTIMEDIA.AUDIODRIVER.HAL, 2020/12/19, Add for bug:723631 -->
         <device name="SND_DEVICE_OUT_SPEAKER_VOICE_PLAYBACK_EFFECT" backend="speaker" interface="TERT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_BT_A2DP_AUDIO_PLAYBACK_EFFECT" backend="bt-a2dp" interface="SLIMBUS_7_RX"/>
-        <device name="SND_DEVICE_OUT_HEADPHONES_VOICE_PLAYBACK_EFFECT" backend="headphones" interface="INT0_MI2S_RX"/>
-        <!--#Yongzhi.Zhang@PSW.MM.AudioDriver.HAL.1508657, 2018/08/02, add for pmic headset in VoiceScence-->
-        <!--#Nan.Zhong@PSW.MM.AudioDriver.HAL, 2019/03/13, add for pmic headset in game dirac effect-->
-        <device name="SND_DEVICE_OUT_HEADPHONES_DIRAC_GAME" backend="headphones" interface="INT0_MI2S_RX"/>
-        <!--#Nan.Zhong@PSW.MM.AudioDriver.HAL, 2019/03/13, add for pmic headset in game dirac effect-->
+        <!--#endif -->
         <device name="SND_DEVICE_OUT_SPEAKER_VOICE_PLAYBACK_EFFECT" backend="speaker" interface="TERT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_VOICE_PLAYBACK_EFFECT" backend="headphones" interface="INT0_MI2S_RX"/>
         <device name="SND_DEVICE_IN_SPEAKER_MIC_VOICE_RECORD_EFFECT" interface="INT3_MI2S_TX"/>
@@ -373,11 +370,15 @@
         <device name="SND_DEVICE_OUT_HEADPHONES_96" interface="INT0_MI2S_RX"/>
         <device name="SND_DEVICE_IN_HANDSET_SINGLE_MIC" interface="INT3_MI2S_TX"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_USB_HEADSET_MIC" interface="USB_AUDIO_TX"/>
-
         <!--#Jianfeng.Qiu@PSW.MM.AudioDriver.HAL, 2017/09/22, Add for oppo config end-->
         <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/10/12, Add for dummy dev START -->
         <device name="SND_DEVICE_OUT_DUMMY" backend="dummy" interface="AFE_PCM_RX"/>
         <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/10/12, Add for dummy dev END -->
+        <device name="SND_DEVICE_OUT_HEADPHONES_VOICE_PLAYBACK_EFFECT" backend="headphones" interface="INT0_MI2S_RX"/>
+        <!--#Yongzhi.Zhang@PSW.MM.AudioDriver.HAL.1508657, 2018/08/02, add for pmic headset in VoiceScence-->
+        <!--#Nan.Zhong@PSW.MM.AudioDriver.HAL, 2019/03/13, add for pmic headset in game dirac effect-->
+        <device name="SND_DEVICE_OUT_HEADPHONES_DIRAC_GAME" backend="headphones" interface="INT0_MI2S_RX"/>
+        <!--#Nan.Zhong@PSW.MM.AudioDriver.HAL, 2019/03/13, add for pmic headset in game dirac effect-->
     </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>

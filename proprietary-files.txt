@@ -663,32 +663,34 @@ vendor/etc/lowi.conf
 vendor/etc/sap.conf
 vendor/etc/xtwifi.conf
 
-# IMS
-system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so
-system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so
-system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so
-system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so
-system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so
-system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so
-system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so
-system_ext/lib64/lib-imsvideocodec.so
-system_ext/lib64/lib-imsvt.so
-system_ext/lib64/lib-imsvtextutils.so
-system_ext/lib64/lib-imsvtutils.so
-system_ext/lib64/libdiag_system.so
-system_ext/lib64/libimscamera_jni.so
-system_ext/lib64/libimsmedia_jni.so
-system_ext/lib64/vendor.qti.diaghal@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.2.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.3.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.4.so
-system_ext/lib64/vendor.qti.ims.callinfo@1.0.so
-system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
--system_ext/priv-app/ims/ims.apk
+# IMS (System) - from LA.QSSI.12.0.r1-07000-qssi.0
+system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so|a98050350a8f68ab34e65cf31f5b4ee02f1402b8
+system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so|e7216f7f62bd609a682c9664018dfd0c452c62ee
+system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so|686b97d25e7eb27fdfebf1950bafda5e43e3b80b
+system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so|bfa2a68067aafc92260c49e6e2f530128f68757a
+system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so|1a0355a17be6b1ca2a508b0f2dd860892bec01fb
+system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so|e9616129ab275850951f99902dd314279ebbbba9
+system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so|88b352b478c2f31e24c05f009c5dc6ba07950530
+system_ext/lib64/lib-imsvideocodec.so|9027af71673fc274f38338a9da239cef429f50c6
+system_ext/lib64/lib-imsvt.so|3de5881767ee963d8816ba70904466b80791760f
+system_ext/lib64/lib-imsvtextutils.so|bf6b02f56dffd673f4ca552fcbedcaeef2f4de7f
+system_ext/lib64/lib-imsvtutils.so|f102f77716bf720ad493155e7c4675f3218e46eb
+system_ext/lib64/libdiag_system.so|b511b314809f051186accb0e936568213ba01c99
+system_ext/lib64/libimscamera_jni.so|0c73d281a46af67545b1772b539d2fbda7bf8385
+system_ext/lib64/libimsmedia_jni.so|c358cac526359086ccc19bc03f5404c8a966ace8
+system_ext/lib64/vendor.qti.diaghal@1.0.so|8b6f1bb87b0780825e46e3d00680ffc0da0b50d9
+system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so|603d73085e2a9a3022be32ab72e11c41969f892b
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so|fd2e3cf7e51a5ad1044f3862fc644499f2158edd
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so|434a2bd339b4871abff15a128e4b62f4c3f6a2a0
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.2.so|4085dbd2c4979523892658977159db01c032df0b
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.3.so|6de3961de0b6ec6270e9a43ac206c8f13c60e722
+system_ext/lib64/vendor.qti.hardware.radio.ims@1.4.so|0930e9c0518f270a7e712035eaed3fd625ca46c9
+system_ext/lib64/vendor.qti.ims.callinfo@1.0.so|73ce1c21a243bfbaf722445092ab065fbbc1eaab
+system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so|d32f6c15dd1224f117793e456f25bb66d58ce55a
+system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|cfb8cc03e6aa405694b47bc9cb1d41b7bd545ceb
+-system_ext/priv-app/ims/ims.apk|0fd42e657e272d6ea2b2c21b451d4a49c94287ea
+
+# IMS (Vendor)
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
@@ -912,17 +914,18 @@ vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 
-# RIL
+# RIL (System) - from LA.QSSI.12.0.r1-07000-qssi.0
+-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|73112cdd5925e6bdf6c51949ec9bce4477ee8814
+system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
+system_ext/framework/qcrilhook.jar|da67e8893aadf3e8b1c9cb1ca82a469c6062575b
+system_ext/framework/qti-telephony-common.jar|e6da4cc4dfb81e979166def56a0b8fc049a05809
+-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|0acedaf8b03bf0f7ba45b76d6e563795498f92fd
+
+# RIL (Vendor)
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.radio@1.0.so
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
-system_ext/etc/permissions/qcrilhook.xml
-system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/etc/permissions/telephonyservice.xml
-system_ext/framework/qcrilhook.jar
-system_ext/framework/qti-telephony-common.jar
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrild
 vendor/bin/adpl

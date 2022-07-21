@@ -75,6 +75,18 @@ vendor/lib/libaudcal.so
 vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
 
+# Audio HAL
+odm/etc/audio_platform_info.xml
+odm/etc/mixer_paths.xml
+odm/etc/sound_trigger_mixer_paths.xml
+odm/etc/sound_trigger_platform_info.xml
+odm/lib/libaudioEngineerTest.so
+odm/lib64/libaudioEngineerTest.so
+vendor/lib/hw/audio.primary.sdm710.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib64/hw/audio.primary.sdm710.so
+vendor/lib64/libaudio_log_utils.so
+
 # Audio Firmware
 odm/firmware/tfa98xx.cnt
 

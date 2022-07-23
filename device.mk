@@ -300,7 +300,9 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
 PRODUCT_PACKAGES += \
-    OPlusAmoledFrameworksResTarget
+    FrameworksResTarget_RMX1901 \
+    FrameworksResTarget_RMX1921 \
+    FrameworksResTarget_RMX1971
 
 # Perf
 PRODUCT_PACKAGES += \

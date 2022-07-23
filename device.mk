@@ -249,7 +249,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oplus
+    vendor.lineage.livedisplay@2.1-service.nicky
 
 # Media
 PRODUCT_PACKAGES += \

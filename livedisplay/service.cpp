@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay@2.1-service-oneplus"
+#define LOG_TAG "vendor.lineage.livedisplay@2.1-service-nicky"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
 #include <hidl/HidlTransportSupport.h>
-#include <livedisplay/oneplus/AntiFlicker.h>
-#include <livedisplay/oneplus/SunlightEnhancement.h>
+#include <livedisplay/nicky/AntiFlicker.h>
+#include <livedisplay/nicky/SunlightEnhancement.h>
 #include <livedisplay/sdm/PictureAdjustment.h>
 #include <vendor/lineage/livedisplay/2.1/IPictureAdjustment.h>
 

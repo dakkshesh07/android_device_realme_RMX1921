@@ -13,32 +13,32 @@
 // limitations under the License.
 
 filegroup {
-    name: "vendor.lineage.livedisplay@2.1-oneplus-af",
+    name: "vendor.lineage.livedisplay@2.1-nicky-af",
     srcs: ["AntiFlicker.cpp"],
 }
 
 filegroup {
-    name: "vendor.lineage.livedisplay@2.1-oneplus-se",
+    name: "vendor.lineage.livedisplay@2.1-nicky-se",
     srcs: ["SunlightEnhancement.cpp"],
 }
 
 cc_library_headers {
-    name: "vendor.lineage.livedisplay@2.1-oneplus-headers",
+    name: "vendor.lineage.livedisplay@2.1-nicky-headers",
     vendor_available: true,
     export_include_dirs: ["include"],
 }
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.1-service.oneplus",
+    name: "vendor.lineage.livedisplay@2.1-service.nicky",
     defaults: ["hidl_defaults"],
-    init_rc: ["vendor.lineage.livedisplay@2.1-service.oneplus.rc"],
-    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.oneplus.xml"],
+    init_rc: ["vendor.lineage.livedisplay@2.1-service.nicky.rc"],
+    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.nicky.xml"],
     relative_install_path: "hw",
     srcs: [
         ":vendor.lineage.livedisplay@2.0-sdm-pa",
         ":vendor.lineage.livedisplay@2.0-sdm-utils",
-        ":vendor.lineage.livedisplay@2.1-oneplus-af",
-        ":vendor.lineage.livedisplay@2.1-oneplus-se",
+        ":vendor.lineage.livedisplay@2.1-nicky-af",
+        ":vendor.lineage.livedisplay@2.1-nicky-se",
         "service.cpp",
     ],
     shared_libs: [
@@ -51,7 +51,7 @@ cc_binary {
     ],
     header_libs: [
         "vendor.lineage.livedisplay@2.0-sdm-headers",
-        "vendor.lineage.livedisplay@2.1-oneplus-headers",
+        "vendor.lineage.livedisplay@2.1-nicky-headers",
     ],
     proprietary: true,
 }

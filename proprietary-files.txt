@@ -121,6 +121,8 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44f
 odm/lib/libSNPE_G.so
 odm/lib64/libswresample.so
 odm/lib64/libswscale.so
+odm/lib64/libormshalclient.so
+odm/lib64/vendor.oplus.hardware.orms@1.0.so
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/libOPPORectify.so
@@ -452,7 +454,6 @@ vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
-vendor/lib64/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_distortion_correction.so
 vendor/lib64/libarcsoft_distortion_correction_710.so
@@ -471,19 +472,6 @@ vendor/lib64/libarcsoft_smart_denoise.so
 vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
-
-# ORMS
-odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service
-odm/lib64/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-impl.so
-odm/lib/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-impl.so
-odm/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so
-odm/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so
-odm/etc/vintf/manifest/manifest_oplus_orms.xml
-odm/lib/libormshalclient.so
-odm/lib/vendor.oplus.hardware.orms@1.0.so
-odm/lib64/libormshalclient.so
-odm/lib64/vendor.oplus.hardware.orms@1.0.so
-odm/etc/init/vendor.oplus.hardware.orms.ormsHalService@1.0-service.rc
 
 # Camera-firmware
 vendor/firmware/CAMERA_ICP.elf

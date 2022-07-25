@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.overlay.oplus_RMX1921">
+    package="android.overlay.oplus_oled">
     <overlay
         android:isStatic="true"
         android:priority="1"
-        android:requiredSystemPropertyName="ro.boot.prjname"
-        android:requiredSystemPropertyValue="19651"
+        android:requiredSystemPropertyName="ro.vendor.fp_type"
+        android:requiredSystemPropertyValue="optical"
         android:targetPackage="android" />
 </manifest>

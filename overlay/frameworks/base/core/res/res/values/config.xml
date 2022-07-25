@@ -452,4 +452,8 @@
          running in WAL mode.
          Choices are: FULL, NORMAL, OFF. -->
     <string name="db_wal_sync_mode" translatable="false">OFF</string>
+
+     <!-- Whether to cancel fingerprint operation if not idle -->
+     <bool name="config_fpCancelIfNotIdle">true</bool>
+    
 </resources>

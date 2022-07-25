@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "FrameworksResTarget_RMX1901",
+    name: "SystemUIResTarget_oled",
     device_specific: true,
 }

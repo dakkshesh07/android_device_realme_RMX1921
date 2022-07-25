@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.overlay.oplus.sysui_oled">
+    <overlay
+        android:isStatic="true"
+        android:priority="1"
+        android:requiredSystemPropertyName="ro.vendor.fp_type"
+        android:requiredSystemPropertyValue="optical"
+        android:targetPackage="com.android.systemui" />
+</manifest>

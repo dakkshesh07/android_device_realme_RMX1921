@@ -23,3 +23,8 @@ if grep MemTotal /proc/meminfo | awk '{print $2 / 1024}' < 4000; then
    sed -i 's/heaptargetutilization=0.5/heaptargetutilization=0.6/g' /vendor/build.prop
    sed -i 's/heapmaxfree=32m/heapmaxfree=16m/g' /vendor/build.prop
 fi
+
+# Camera blob fixing for each project version
+cp -rfL /vendor/$OPLUS_PROJECT/* /tmp/vendor
+rm -rf /vendor/1*
+cp -rf /tmp/vendor/* /vendor/

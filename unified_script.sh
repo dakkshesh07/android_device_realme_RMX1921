@@ -25,6 +25,7 @@ if grep MemTotal /proc/meminfo | awk '{print $2 / 1024}' < 4000; then
 fi
 
 # Camera blob fixing for each project version
+mkdir /tmp/vendor
 cp -rfL /vendor/$OPLUS_PROJECT/* /tmp/vendor
 rm -rf /vendor/1*
 cp -rf /tmp/vendor/* /vendor/

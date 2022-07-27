@@ -29,3 +29,9 @@ mkdir /tmp/vendor
 cp -rfL /vendor/$OPLUS_PROJECT/* /tmp/vendor
 rm -rf /vendor/1*
 cp -rf /tmp/vendor/* /vendor/
+
+# Audio and Sensor blobs
+mkdir /tmp/odm
+cp -rfL /odm/$OPLUS_PROJECT/* /tmp/odm
+rm -rf /odm/1*
+cp -rf /tmp/odm/* /odm/

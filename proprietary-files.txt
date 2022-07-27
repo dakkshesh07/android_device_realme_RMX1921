@@ -1,7 +1,7 @@
 # Unpinned blobs from grus-user 11 RKQ1.200826.002 V12.5.1.0.RFBMIXM release-keys
 # pyxis: pyxis-user 11 RKQ1.200826.002 V12.5.2.0.RFCMIXM release-keys
 
-# ACDB
+# ACDB (5 pro)
 odm/etc/acdbdata/Bluetooth_cal.acdb
 odm/etc/acdbdata/General_cal.acdb
 odm/etc/acdbdata/Global_cal.acdb
@@ -9,8 +9,34 @@ odm/etc/acdbdata/Handset_cal.acdb
 odm/etc/acdbdata/Hdmi_cal.acdb
 odm/etc/acdbdata/Headset_cal.acdb
 odm/etc/acdbdata/Speaker_cal.acdb
-vendor/etc/acdbdata/adsp_avs_config.acdb:odm/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
+
+# ACDB (3 pro)
+odm/18621/etc/acdbdata/Bluetooth_cal.acdb
+odm/18621/etc/acdbdata/General_cal.acdb
+odm/18621/etc/acdbdata/Global_cal.acdb
+odm/18621/etc/acdbdata/Handset_cal.acdb
+odm/18621/etc/acdbdata/Hdmi_cal.acdb
+odm/18621/etc/acdbdata/Headset_cal.acdb
+odm/18621/etc/acdbdata/Speaker_cal.acdb
+
+# ACDB (X)
+odm/19605/etc/acdbdata/Bluetooth_cal.acdb
+odm/19605/etc/acdbdata/General_cal.acdb
+odm/19605/etc/acdbdata/Global_cal.acdb
+odm/19605/etc/acdbdata/Handset_cal.acdb
+odm/19605/etc/acdbdata/Hdmi_cal.acdb
+odm/19605/etc/acdbdata/Headset_cal.acdb
+odm/19605/etc/acdbdata/Speaker_cal.acdb
+
+# ACDB (XT)
+odm/19651/etc/acdbdata/Bluetooth_cal.acdb
+odm/19651/etc/acdbdata/General_cal.acdb
+odm/19651/etc/acdbdata/Global_cal.acdb
+odm/19651/etc/acdbdata/Handset_cal.acdb
+odm/19651/etc/acdbdata/Hdmi_cal.acdb
+odm/19651/etc/acdbdata/Headset_cal.acdb
+odm/19651/etc/acdbdata/Speaker_cal.acdb
 
 # ADSP
 vendor/bin/adsprpcd

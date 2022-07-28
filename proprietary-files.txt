@@ -1,42 +1,24 @@
 # Unpinned blobs from grus-user 11 RKQ1.200826.002 V12.5.1.0.RFBMIXM release-keys
 # pyxis: pyxis-user 11 RKQ1.200826.002 V12.5.2.0.RFCMIXM release-keys
 
-# ACDB (5 pro)
-odm/etc/acdbdata/Bluetooth_cal.acdb
-odm/etc/acdbdata/General_cal.acdb
-odm/etc/acdbdata/Global_cal.acdb
-odm/etc/acdbdata/Handset_cal.acdb
-odm/etc/acdbdata/Hdmi_cal.acdb
-odm/etc/acdbdata/Headset_cal.acdb
-odm/etc/acdbdata/Speaker_cal.acdb
+# ACDB - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
+vendor/etc/acdbdata/PNX/Bluetooth_cal.acdb:odm/etc/acdbdata/Bluetooth_cal.acdb
+vendor/etc/acdbdata/PNX/General_cal.acdb:odm/etc/acdbdata/General_cal.acdb
+vendor/etc/acdbdata/PNX/Global_cal.acdb:odm/etc/acdbdata/Global_cal.acdb
+vendor/etc/acdbdata/PNX/Handset_cal.acdb:odm/etc/acdbdata/Handset_cal.acdb
+vendor/etc/acdbdata/PNX/Hdmi_cal.acdb:odm/etc/acdbdata/Hdmi_cal.acdb
+vendor/etc/acdbdata/PNX/Headset_cal.acdb:odm/etc/acdbdata/Headset_cal.acdb
+vendor/etc/acdbdata/PNX/Speaker_cal.acdb:odm/etc/acdbdata/Speaker_cal.acdb
+vendor/etc/acdbdata/PNX/Bluetooth_cal.acdb
+vendor/etc/acdbdata/PNX/General_cal.acdb
+vendor/etc/acdbdata/PNX/Global_cal.acdb
+vendor/etc/acdbdata/PNX/Handset_cal.acdb
+vendor/etc/acdbdata/PNX/Hdmi_cal.acdb
+vendor/etc/acdbdata/PNX/Headset_cal.acdb
+vendor/etc/acdbdata/PNX/Speaker_cal.acdb
+
+# ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
-
-# ACDB (3 pro)
-odm/18621/etc/acdbdata/Bluetooth_cal.acdb
-odm/18621/etc/acdbdata/General_cal.acdb
-odm/18621/etc/acdbdata/Global_cal.acdb
-odm/18621/etc/acdbdata/Handset_cal.acdb
-odm/18621/etc/acdbdata/Hdmi_cal.acdb
-odm/18621/etc/acdbdata/Headset_cal.acdb
-odm/18621/etc/acdbdata/Speaker_cal.acdb
-
-# ACDB (X)
-odm/19605/etc/acdbdata/Bluetooth_cal.acdb
-odm/19605/etc/acdbdata/General_cal.acdb
-odm/19605/etc/acdbdata/Global_cal.acdb
-odm/19605/etc/acdbdata/Handset_cal.acdb
-odm/19605/etc/acdbdata/Hdmi_cal.acdb
-odm/19605/etc/acdbdata/Headset_cal.acdb
-odm/19605/etc/acdbdata/Speaker_cal.acdb
-
-# ACDB (XT)
-odm/19651/etc/acdbdata/Bluetooth_cal.acdb
-odm/19651/etc/acdbdata/General_cal.acdb
-odm/19651/etc/acdbdata/Global_cal.acdb
-odm/19651/etc/acdbdata/Handset_cal.acdb
-odm/19651/etc/acdbdata/Hdmi_cal.acdb
-odm/19651/etc/acdbdata/Headset_cal.acdb
-odm/19651/etc/acdbdata/Speaker_cal.acdb
 
 # ADSP
 vendor/bin/adsprpcd
@@ -93,7 +75,7 @@ vendor/lib64/rfsa/adsp/libdsp_streamer_skel.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
-# Audio
+# Audio - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -105,7 +87,7 @@ vendor/lib/libqtigef.so
 # Audio Firmware
 odm/firmware/tfa98xx.cnt
 
-# Audio FX modules
+# Audio FX modules - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
@@ -656,7 +638,7 @@ vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
-# Charger
+# Charger - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/bin/hvdcp_opti
 
 # Charger (Firmware)
@@ -734,10 +716,10 @@ vendor/etc/OPPO_OLED_AD_calib.cfg
 vendor/etc/qdcm_calib_data_oppo18041samsung_ams653tk01_1080_2340_cmd_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_rm19651samsung_ams641rw01_1080_2340_cmd_mode_dsi_panel.xml
 
-# Display (HDR)
+# Display (HDR) - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/lib64/libhdr_tm.so
 
-# Display (SDM)
+# Display (SDM) - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/lib/libdisplayqos.so
 vendor/lib/libqseed3.so
 vendor/lib/libsdm-color.so
@@ -754,7 +736,7 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
-# Display postprocessing
+# Display postprocessing - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/mm-pp-dpps
 vendor/bin/ppd
@@ -912,7 +894,7 @@ vendor/firmware/a630_sqe.fw
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
-# GNSS
+# GNSS - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
@@ -962,7 +944,7 @@ vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 
-# GNSS configs
+# GNSS configs - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/etc/apdr.conf
 vendor/etc/flp.conf
 vendor/etc/gnss_antenna_info.conf
@@ -1072,7 +1054,7 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
-# Listen
+# Listen - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/lib/hw/sound_trigger.primary.sdm710.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libcapiv2svacnn.so
@@ -1121,7 +1103,7 @@ vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# OMX
+# OMX - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
 vendor/lib/libFlacSwDec.so
@@ -1172,7 +1154,7 @@ vendor/lib/libspcom.so
 vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
-# Power-off alarm
+# Power-off alarm - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 -system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
 system_ext/lib/vendor.qti.hardware.alarm@1.0.so
@@ -1536,8 +1518,7 @@ vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
-# Soter
-system_ext/app/SoterService/SoterService.apk
+# Soter - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
@@ -1549,7 +1530,7 @@ vendor/etc/init/init_thermal-engine.rc
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
-# Time services
+# Time services - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
@@ -1589,7 +1570,7 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# VPP
+# VPP - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vppservice.rc
@@ -1606,10 +1587,8 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 
 # WiFi
 vendor/bin/cnss-daemon
-vendor/etc/wifi/aoa_cldb_falcon.bin
-vendor/etc/wifi/aoa_cldb_swl14.bin
 
-# WiFi Display
+# WiFi Display - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 -framework/WfdCommon.jar
 system_ext/bin/wfdservice
 system_ext/etc/init/wfdservice.rc

@@ -228,6 +228,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.oplus.rc \
+    init.oppo.vendor.motor.rc \
     init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.recovery.rc \

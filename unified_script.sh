@@ -8,9 +8,16 @@
 # Get device codename
 OPLUS_PROJECT=$(getprop "ro.boot.prjname")
 
+# Mount system
+mount -o remount,rw /system_root
+
+# Account for mounting delays
+sleep 3
+
 # Let only hardware specific fingerprint firmware survive
 if [ "$OPLUS_PROJECT" = "18621" ] || [ "$OPLUS_PROJECT" = "18691" ]; then
    rm -r /odm/vendor/firmware/*goodix*
+   rm -rf /system_root/system/priv-app/RealmeProximityHelper
 else
    rm -r /odm/vendor/firmware/*a_fp*
 fi
@@ -35,3 +42,6 @@ mkdir /tmp/odm
 cp -rfL /odm/$OPLUS_PROJECT/* /tmp/odm
 rm -rf /odm/1*
 cp -rf /tmp/odm/* /odm/
+
+# Unmount system
+umount /system_root

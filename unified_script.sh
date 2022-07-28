@@ -22,6 +22,10 @@ else
    rm -r /odm/vendor/firmware/*a_fp*
 fi
 
+if [ "$OPLUS_PROJECT" != "19601" ] || [ "$OPLUS_PROJECT" != "19605" ]; then
+   rm -rf /system_root/system/priv-app/NickyCameraHelper
+fi
+
 # Dalvik heap
 if grep MemTotal /proc/meminfo | awk '{print $2 / 1024}' < 4000; then
    # Dalvik heap configs for 4GB variants

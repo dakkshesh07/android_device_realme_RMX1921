@@ -41,6 +41,7 @@ def OTA_InstallEnd(info):
   info.script.Print("Remounting vendor/odm")
   info.script.AppendExtra('ifelse(is_mounted("/vendor"), unmount("/vendor"));');
   info.script.AppendExtra('ifelse(is_mounted("/odm"), unmount("/odm"));');
+  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/by-name/system", "/system_root", "");');
   info.script.Mount("/vendor")
   info.script.Mount("/odm")
   info.script.Print("Running Unified Script")

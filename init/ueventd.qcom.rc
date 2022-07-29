@@ -163,6 +163,11 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/system_health_monitor 0644  radio      system
 /dev/mdss_rotator         0664   system     system
 
+# fpc fingerprint
+/sys/devices/platform/soc/soc:fp_fpc*        irq               0600  system system
+/sys/devices/platform/soc/soc:fp_fpc*        wakeup_enable     0200  system system
+/sys/devices/platform/soc/soc:fp_fpc*        hw_reset          0600  system system
+
 #QDSS
 /dev/byte-cntr            0660   system    oem_2902
 /dev/mhi_qdss             0660   system    oem_2902

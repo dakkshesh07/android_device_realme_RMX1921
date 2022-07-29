@@ -860,3 +860,9 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
+
+service init-fingerprint-sh /vendor/bin/init.fingerprint.sh 10
+    group root
+    user root
+    disabled
+    oneshot    

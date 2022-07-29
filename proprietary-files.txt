@@ -834,28 +834,6 @@ vendor/lib/libqcbor.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/libqcbor.so
 
-# Fingerprint
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.2-service.fpc.rc
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.fpc
-vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/android.hardware.biometrics.fingerprint@2.2.so
-vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/usr/keylayout/uinput-fpc.kl
-vendor/bin/init.fingerprint.sh
-vendor/usr/idc/uinput-fpc.idc
-vendor/lib64/android.frameworks.stats@1.0.so
-vendor/lib64/android.frameworks.stats-V1-ndk_platform.so
-vendor/firmware/fpctzappfingerprint.b00
-vendor/firmware/fpctzappfingerprint.b01
-vendor/firmware/fpctzappfingerprint.b02
-vendor/firmware/fpctzappfingerprint.b03
-vendor/firmware/fpctzappfingerprint.b04
-vendor/firmware/fpctzappfingerprint.b05
-vendor/firmware/fpctzappfingerprint.b06
-vendor/firmware/fpctzappfingerprint.b07
-vendor/firmware/fpctzappfingerprint.mbn
-vendor/firmware/fpctzappfingerprint.mdt
-
 # Firmware (Goodix Fingerprint)
 odm/vendor/firmware/goodixfp.b00
 odm/vendor/firmware/goodixfp.b01

@@ -310,7 +310,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/Car
 PRODUCT_PACKAGES += \
     FrameworksResTarget_oled \
     FrameworksResTarget_RMX1971 \
-    SystemUIResTarget_oled
+    SystemUIResTarget_oled \
+    SystemUIResTarget_lcd
 
 # Perf
 PRODUCT_PACKAGES += \

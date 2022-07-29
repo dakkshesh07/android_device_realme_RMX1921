@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "SystemUIResTarget_lcd",
+    device_specific: true,
+}

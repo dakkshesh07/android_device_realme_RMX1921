@@ -716,6 +716,12 @@ vendor/etc/OPPO_OLED_AD_calib.cfg
 vendor/etc/qdcm_calib_data_oppo18041samsung_ams653tk01_1080_2340_cmd_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_rm19651samsung_ams641rw01_1080_2340_cmd_mode_dsi_panel.xml
 
+# Display (Composer)
+vendor/19605/lib/hw/hwcomposer.sdm710.so
+vendor/19605/lib64/hw/hwcomposer.sdm710.so
+vendor/19651/lib/hw/hwcomposer.sdm710.so
+vendor/19651/lib64/hw/hwcomposer.sdm710.so
+
 # Display (HDR) - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/lib64/libhdr_tm.so
 

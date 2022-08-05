@@ -99,7 +99,11 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 
 # Display post-processing
+persist.vendor.display.lcd.panel=true
 ro.vendor.display.cabl=2
+ro.vendor.display.ad=1
+ro.vendor.display.sensortype=2
+vendor.display.comp_mask=2
 vendor.display.enable_default_color_mode=1
 
 # DPM

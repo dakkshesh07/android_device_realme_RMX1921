@@ -98,6 +98,26 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 
+# Camera
+oppo.camera.packname=
+persist.camera.gyro.disable=0
+persist.camera.privapp.list=com.oppo.camera,com.oppo.engineermode.camera,com.oppo.engineermode
+persist.vendor.camera.privapp.list=com.oppo.camera,com.oppo.engineermode.camera,com.oppo.engineermode
+ro.camera.notify_nfc=1
+ro.oplus.system.camera.name=com.oppo.camera
+vendor.camera.aux.packagelist=android,com.oppo.engineermode.camera,com.oppo.camera,com.oppo.engineermode
+vendor.oppo.camera.act.fnum=0.0
+vendor.oppo.camera.capmode=0
+vendor.oppo.camera.dualDump.flag=0
+vendor.oppo.camera.dualcam.mode=0
+vendor.oppo.camera.dualcam.rtbfactorymode=1
+vendor.oppo.camera.dualcamera.enableLCRpatch=0
+vendor.oppo.camera.id=1
+vendor.oppo.camera.recoding=0
+vendor.oppo.camera.state=0
+vendor.oppo.camera.videousecase=0
+vendor.oppo.camera.warm.fnum=1.500000
+
 # Display post-processing
 persist.vendor.display.lcd.panel=true
 ro.vendor.display.cabl=2

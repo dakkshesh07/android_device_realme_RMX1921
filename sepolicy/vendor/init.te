@@ -1,0 +1,1 @@
+allow init init:capability2 { mac_admin };

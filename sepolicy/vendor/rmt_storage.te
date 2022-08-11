@@ -1,0 +1,2 @@
+allow rmt_storage vendor_reserve_partition:blk_file rw_file_perms;
+r_dir_file(rmt_storage, vendor_proc_oplus_version)

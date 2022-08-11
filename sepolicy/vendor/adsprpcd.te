@@ -1,0 +1,2 @@
+r_dir_file(adsprpcd, sysfs_graphics)
+r_dir_file(adsprpcd, vendor_proc_oplus_version)

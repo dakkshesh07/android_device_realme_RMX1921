@@ -1,0 +1,2 @@
+# For use by overlays
+get_prop(system_server, vendor_fingerprint_prop)

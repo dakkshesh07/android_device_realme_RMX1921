@@ -1,0 +1,1 @@
+allow zygote vendor_fingerprint_prop:file r_file_perms;

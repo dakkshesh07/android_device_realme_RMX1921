@@ -1,1 +1,3 @@
 allow vendor_qti_init_shell proc_cmdline:file r_file_perms;
+allow vendor_qti_init_shell vendor_proc_fingerprint:file r_file_perms;
+set_prop(vendor_qti_init_shell, vendor_fingerprint_prop)

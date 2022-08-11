@@ -1,8 +1,8 @@
+# Camera
+type camera_motor_device, dev_type;
+
 # Fingerprint
 type fingerprint_device, dev_type;
 
 # Reserve
 type vendor_reserve_partition, dev_type;
-
-# Sensors
-type ssc_interactive_device, dev_type;

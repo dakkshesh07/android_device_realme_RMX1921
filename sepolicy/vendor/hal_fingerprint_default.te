@@ -14,3 +14,8 @@ r_dir_file(hal_fingerprint_default, vendor_proc_fingerprint)
 get_prop(hal_fingerprint_default, system_oplus_project_prop)
 set_prop(hal_fingerprint_default, system_fingerprint_prop)
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+
+allow hal_fingerprint_default sysfs_graphics:dir { search read };
+
+allow hal_fingerprint_default adsprpc_prop:file { getattr  open  read };
+allow hal_fingerprint_default xdsp_device:chr_file { ioctl  open  read };

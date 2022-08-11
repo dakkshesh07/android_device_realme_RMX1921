@@ -1,5 +1,5 @@
 # Camera
-vendor.camera.vm.parameters    u:object_r:vendor_camera_prop:s0
+vendor.oppo.camera.            u:object_r:vendor_camera_prop:s0
 
 # Display
 vendor.dps.dump.composerpid    u:object_r:vendor_display_prop:s0
@@ -20,3 +20,5 @@ ro.vendor.oplus.radio.sar_regionmark    u:object_r:vendor_radio_prop:s0
 # RIL
 vendor.gsm.phoneserial         u:object_r:vendor_nw_exported_system_prop:s0
 vendor.gsm.serial              u:object_r:vendor_nw_exported_system_prop:s0
+oppo.eng.factory.no            u:object_r:vendor_nw_exported_system_prop:s0
+ro.oppo.nw.singlecard          u:object_r:vendor_nw_exported_system_prop:s0

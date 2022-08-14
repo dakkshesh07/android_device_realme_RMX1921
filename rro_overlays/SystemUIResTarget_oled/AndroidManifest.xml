@@ -4,7 +4,7 @@
     <overlay
         android:isStatic="true"
         android:priority="1"
-        android:requiredSystemPropertyName="ro.vendor.fp_type"
+        android:requiredSystemPropertyName="vendor.fingerprint.sensor_type"
         android:requiredSystemPropertyValue="optical"
         android:targetPackage="com.android.systemui" />
 </manifest>

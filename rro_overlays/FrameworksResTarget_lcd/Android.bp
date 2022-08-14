@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "FrameworksResTarget_RMX1971",
+    name: "FrameworksResTarget_lcd",
     device_specific: true,
 }

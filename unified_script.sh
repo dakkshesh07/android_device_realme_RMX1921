@@ -22,7 +22,7 @@ else
    rm -r /odm/vendor/firmware/*a_fp*
 fi
 
-if [ "$OPLUS_PROJECT" != "19601" ] || [ "$OPLUS_PROJECT" != "19605" ]; then
+if [ "$OPLUS_PROJECT" != "18041" ]; then
    rm -rf /system_root/system/priv-app/NickyCameraHelper
 fi
 

@@ -102,7 +102,7 @@ $(REALME_X_INCN_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@echo "WCNSS MAC bin link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /vendor/19605 $@       
+	$(hide) ln -sf /vendor/18041 $@       
 
 ALL_DEFAULT_INSTALLED_MODULES += $(REALME_X_INCN_SYMLINK)
 endif

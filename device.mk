@@ -79,7 +79,6 @@ PRODUCT_PACKAGES += \
     audio.primary.sdm710 \
     audio.r_submix.default \
     audio.usb.default \
-    audioadsprpcd \
     liba2dpoffload \
     libbatterylistener \
     libcomprcapture \

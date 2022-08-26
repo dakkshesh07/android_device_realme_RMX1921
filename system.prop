@@ -56,6 +56,7 @@ ro.com.google.ime.kb_pad_land_l=14
 ro.com.google.ime.kb_pad_land_r=14
 
 # Graphics
+debug.sf.enable_transaction_tracing=false
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 debug.hwui.skia_atrace_enabled=false

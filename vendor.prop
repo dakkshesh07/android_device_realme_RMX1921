@@ -116,6 +116,7 @@ ro.bluetooth.a2dp_offload.supported=true
 persist.camera.HAL3.enabled=1
 persist.camera.gyro.disable=0
 persist.vendor.camera.is_type=4
+persist.vendor.camera.eis.enable=1
 
 # Codec2
 debug.stagefright.omx_default_rank.sw-audio=1

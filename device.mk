@@ -219,6 +219,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.1.vendor
 
+# Google Battery HAL
+PRODUCT_PACKAGES += \
+    vendor.google.google_battery@1.1
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \

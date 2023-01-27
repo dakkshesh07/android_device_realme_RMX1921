@@ -882,7 +882,7 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# FM (system)
+# FM (system) - from LA.QSSI.14.0.r1-10000.01-qssi.0
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
@@ -1334,8 +1334,10 @@ vendor/lib/libspcom.so
 vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
-# Power-off Alarm
-product/app/PowerOffAlarm/PowerOffAlarm.apk
+# Power-off Alarm (system) - from LA.QSSI.14.0.r1-10000.01-qssi.0
+system_ext/app/PowerOffAlarm/PowerOffAlarm.apk|4dde74329bafbc055baa30043d778f876466a6a8
+
+# Power-off Alarm (vendor)
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc

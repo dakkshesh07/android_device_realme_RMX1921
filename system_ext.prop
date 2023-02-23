@@ -71,7 +71,6 @@ ro.com.google.ime.kb_pad_land_r=14
 # Graphics
 debug.sf.enable_transaction_tracing=false
 ro.hwui.render_ahead=3
-debug.sf.enable_hwc_vds=1
 debug.sf.auto_latch_unsignaled=1
 debug.hwui.skia_atrace_enabled=false
 persist.demo.hdmirotationlock=false

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_nicky.mk
+    $(LOCAL_DIR)/yaap_nicky.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_nicky-user \
-    lineage_nicky-userdebug \
-    lineage_nicky-eng
+    yaap_nicky-user \
+    yaap_nicky-userdebug \
+    yaap_nicky-eng

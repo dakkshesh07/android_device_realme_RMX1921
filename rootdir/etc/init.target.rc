@@ -395,7 +395,16 @@ service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.
     capabilities SYS_NICE
     onrestart restart surfaceflinger
     socket pps stream 0660 system system
-    writepid /dev/cpuset/foreground/tasks
+    task_profiles ProcessCapacityHigh HighPerformance
+
+service vendor.qti.hardware.display.allocator /vendor/bin/hw/vendor.qti.hardware.display.allocator-service
+    override
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    task_profiles ProcessCapacityHigh HighPerformance
 
 #ifndef OPLUS_BUG_COMPATIBILITY
 #//ZhangPan@CONNECTIVITY.WIFI.BASIC.LOG.1072015,2016/08/03, Remove for wifi log enhance function

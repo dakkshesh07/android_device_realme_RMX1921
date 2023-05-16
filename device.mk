@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Include GSI keys
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -96,7 +96,6 @@ PRODUCT_PACKAGES += \
     libssrec \
     libstdc++.vendor \
     libtinycompress \
-    libtinymix \
     libvolumelistener
 
 # Audio configs
@@ -175,8 +174,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
 # Doze
-PRODUCT_PACKAGES += \
-    OplusDoze
+#PRODUCT_PACKAGES += \
+#    OplusDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -374,8 +373,8 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
 # Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oplus
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.touch@1.0-service.oplus
 
 # Trust
 PRODUCT_PACKAGES += \
@@ -408,7 +407,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
-    WifiResCommon \
     wpa_supplicant \
     wpa_supplicant.conf
 

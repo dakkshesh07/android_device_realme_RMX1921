@@ -5,10 +5,10 @@
 //
 
 cc_binary {
-    name: "android.hardware.light-service.nicky",
+    name: "android.hardware.light-service.RMX1921",
     relative_install_path: "hw",
-    init_rc: ["android.hardware.light-service.nicky.rc"],
-    vintf_fragments: ["android.hardware.light-service.nicky.xml"],
+    init_rc: ["android.hardware.light-service.RMX1921.rc"],
+    vintf_fragments: ["android.hardware.light-service.RMX1921.xml"],
     srcs: [
         "Lights.cpp",
         "LED.cpp",

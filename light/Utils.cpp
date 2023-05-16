@@ -6,7 +6,7 @@
 
 #include "Utils.h"
 
-#define LOG_TAG "android.hardware.light-service.nicky"
+#define LOG_TAG "android.hardware.light-service.RMX1921"
 
 #include <android-base/file.h>
 #include <android-base/logging.h>

@@ -23,7 +23,7 @@ else
 fi
 
 if [ "$OPLUS_PROJECT" != "18041" ]; then
-   rm -rf /system_root/system/priv-app/NickyCameraHelper
+   rm -rf /system_root/system/priv-app/RMX1921CameraHelper
 fi
 
 # Dalvik heap

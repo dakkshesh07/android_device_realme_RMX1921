@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_nicky.mk
+    $(LOCAL_DIR)/yaap_RMX1921.mk
 
 COMMON_LUNCH_CHOICES := \
-    yaap_nicky-user \
-    yaap_nicky-userdebug \
-    yaap_nicky-eng
+    yaap_RMX1921-user \
+    yaap_RMX1921-userdebug \
+    yaap_RMX1921-eng

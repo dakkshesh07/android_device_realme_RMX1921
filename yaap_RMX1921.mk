@@ -11,14 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
-# Inherit from nicky device
-$(call inherit-product, device/oplus/nicky/device.mk)
+# Inherit from RMX1921 device
+$(call inherit-product, device/realme/RMX1921/device.mk)
 
-PRODUCT_NAME := yaap_nicky
-PRODUCT_DEVICE := nicky
-PRODUCT_MANUFACTURER := oplus
+PRODUCT_NAME := yaap_RMX1921
+PRODUCT_DEVICE := RMX1921
+PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := nicky
+PRODUCT_MODEL := RMX1921
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 

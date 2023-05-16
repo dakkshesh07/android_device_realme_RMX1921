@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.biometrics.fingerprint@2.3-service.nicky",
+    name: "android.hardware.biometrics.fingerprint@2.3-service.RMX1921",
     defaults: ["hidl_defaults"],
-    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.nicky.rc"],
-    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.nicky.xml"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.RMX1921.rc"],
+    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.RMX1921.xml"],
     relative_install_path: "hw",
     proprietary: true,
     srcs: [
@@ -40,7 +40,7 @@ cc_binary {
 }
 
 cc_library_static {
-    name: "libudfps_extension.nicky",
+    name: "libudfps_extension.RMX1921",
     srcs: ["UdfpsExtension.cpp"],
     include_dirs: [
         "frameworks/native/services/surfaceflinger/CompositionEngine/include"

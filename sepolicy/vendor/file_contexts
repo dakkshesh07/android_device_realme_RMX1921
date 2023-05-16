@@ -3,14 +3,14 @@
 /mnt/vendor/persist/dual_camera_calibration(/.*)?      u:object_r:vendor_persist_camera_file:s0
 
 # Display
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.nicky    u:object_r:hal_lineage_livedisplay_qti_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.RMX1921    u:object_r:hal_lineage_livedisplay_qti_exec:s0
 
 # Engineering
 /mnt/vendor/persist/engineermode(/.*)?    u:object_r:vendor_persist_engineer_file:s0
 
 # Fingerprint
 /(vendor|system/vendor)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@2\.1-service     u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.nicky    u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.RMX1921    u:object_r:hal_fingerprint_default_exec:s0
 /dev/goodix_fp                                                                                   u:object_r:fingerprint_device:s0
 /sys/devices/platform/soc/soc:fpc_fpc1020(/.*)?                                                  u:object_r:fingerprint_device:s0
 
@@ -18,7 +18,7 @@
 /(odm|vendor/odm)/bin/init\.oplus\.sh    u:object_r:vendor_qti_init_shell_exec:s0
 
 # Light Hal
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light\-service\.nicky                      u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light\-service\.RMX1921                      u:object_r:hal_light_default_exec:s0
 
 # Motor
 /sys/class/motor(/.*)         u:object_r:vendor_camera_motor_device:s0

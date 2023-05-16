@@ -36,7 +36,7 @@ on post-fs-data
     chmod 0600 /sys/bus/platform/devices/fpc_interrupt/irq
     chmod 0660 /sys/bus/platform/devices/fpc_interrupt/irq_unexpected
 
-service vendor.fps_hal.nicky /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.nicky
+service vendor.fps_hal.RMX1921 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.RMX1921
     interface android.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint default
     interface android.hardware.biometrics.fingerprint@2.2::IBiometricsFingerprint default
     interface android.hardware.biometrics.fingerprint@2.3::IBiometricsFingerprint default

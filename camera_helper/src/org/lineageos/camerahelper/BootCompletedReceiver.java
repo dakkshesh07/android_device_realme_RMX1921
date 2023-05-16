@@ -22,7 +22,7 @@ import android.content.Intent;
 import android.util.Log;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
-    private static final String TAG = "NickyCameraHelper";
+    private static final String TAG = "RMX1921CameraHelper";
 
     @Override
     public void onReceive(final Context context, Intent intent) {

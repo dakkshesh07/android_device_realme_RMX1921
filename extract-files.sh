@@ -8,8 +8,8 @@
 
 set -e
 
-DEVICE=nicky
-VENDOR=oplus
+DEVICE=RMX1921
+VENDOR=realme
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

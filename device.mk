@@ -134,7 +134,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    NickyCameraHelper
+    RMX1921CameraHelper
 
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
@@ -186,7 +186,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.nicky
+    android.hardware.biometrics.fingerprint@2.3-service.RMX1921
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -250,11 +250,11 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.nicky
+    android.hardware.light-service.RMX1921
 
 # LiveDisplay
 #PRODUCT_PACKAGES += \
-#    vendor.lineage.livedisplay@2.1-service.nicky
+#    vendor.lineage.livedisplay@2.1-service.RMX1921
 
 # Media
 PRODUCT_PACKAGES += \
@@ -346,7 +346,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal.nicky \
+    android.hardware.sensors@2.0-service.multihal.RMX1921 \
     libsensorndkbridge \
     RealmeProximityHelper
 
@@ -424,4 +424,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/oplus/nicky/nicky-vendor.mk)
+$(call inherit-product, vendor/realme/RMX1921/RMX1921-vendor.mk)

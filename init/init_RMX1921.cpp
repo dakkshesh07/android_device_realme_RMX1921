@@ -72,4 +72,6 @@ void load_dalvikvm_properties() {
 void vendor_load_properties() {
   // dalvikvm props
   load_dalvikvm_properties();
+  // SafetyNet workaround
+  property_override("ro.boot.verifiedbootstate", "green");
 }

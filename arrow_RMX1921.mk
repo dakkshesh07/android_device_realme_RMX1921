@@ -4,11 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Evolution X stuff
+# Inherit some common ArrowOSstuff
 TARGET_BOOT_ANIMATION_RES := 1080
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_SUPPORTS_QUICK_TAP := true
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit from RMX1921 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -16,7 +14,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1921
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := evolution_RMX1921
+PRODUCT_NAME := arrow_RMX1921
 PRODUCT_MODEL := RMX1921
 
 PRODUCT_SYSTEM_NAME := RMX1921

@@ -456,7 +456,6 @@ PRODUCT_COPY_FILES += \
 
 # Realme specific packages
 PRODUCT_PACKAGES += \
-    RealmeDoze \
     RealmeParts \
     RealmeProximityHelper
 

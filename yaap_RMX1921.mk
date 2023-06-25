@@ -4,13 +4,17 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from RMX1921 device
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
+
 # Inherit some common YAAP stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_GAPPS := true
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
-
-# Inherit from RMX1921 device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1921

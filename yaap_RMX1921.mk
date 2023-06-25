@@ -14,6 +14,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common YAAP stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_GAPPS := true
+TARGET_ENABLE_BLUR := true
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 PRODUCT_BRAND := realme

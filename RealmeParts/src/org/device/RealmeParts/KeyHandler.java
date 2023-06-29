@@ -54,6 +54,7 @@ import org.device.RealmeParts.Touch.util.Utils;
 import org.device.RealmeParts.Touch.util.ActionConstants;
 
 
+
 public class KeyHandler implements DeviceKeyHandler {
 
     private static final String TAG = KeyHandler.class.getSimpleName();
@@ -134,6 +135,11 @@ public class KeyHandler implements DeviceKeyHandler {
                     "org.device.RealmeParts", Context.CONTEXT_IGNORE_SECURITY);
         } catch (NameNotFoundException e) {
         }
+    }
+
+    @Override
+    public void onPocketStateChanged(boolean inPocket) {
+        // do nothing
     }
 
     private class EventHandler extends Handler {

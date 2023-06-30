@@ -258,6 +258,10 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
+# Input
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.realme_sdm710

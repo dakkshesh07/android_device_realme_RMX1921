@@ -244,6 +244,9 @@ PRODUCT_USES_QCOM_HARDWARE := true
 SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sdm845/audio
 SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sdm845/display
 SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sdm845/media
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sdm845/display
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sdm845/audio
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sdm845/media
 
 # Health
 PRODUCT_PACKAGES += \

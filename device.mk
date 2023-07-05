@@ -416,6 +416,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# QDCM
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/qdcm/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \

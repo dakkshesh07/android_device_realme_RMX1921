@@ -642,11 +642,6 @@ vendor/lib64/vendor.display.color@1.4.so|1396673668977af0a8afeaa64f891c3b356f958
 vendor/lib64/vendor.display.color@1.5.so|f1c12eb133698917385d48913358eaffd9a10879
 vendor/lib64/vendor.display.postproc@1.0.so|e56b66d744dd77bd87afbb30cab558acf15709fb
 
-# Display Calibration
-vendor/etc/OPPO_OLED_AD_calib.cfg
-vendor/etc/qdcm_calib_data_oppo18041samsung_ams653tk01_1080_2340_cmd_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_rm19651samsung_ams641rw01_1080_2340_cmd_mode_dsi_panel.xml
-
 # Dolby - from OnePlus 9R OOS 11.2.8.8
 system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
 -system_ext/priv-app/DaxUI/DaxUI.apk|89e8ceabb19458b872eed0560a627eb2ff4c4dc4

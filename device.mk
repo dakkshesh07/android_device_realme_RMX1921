@@ -348,9 +348,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/frameworks/base/packages/SystemUI
-
 # Perfd (dummy)
 PRODUCT_PACKAGES += \
     libqti-perfd-client

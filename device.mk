@@ -152,7 +152,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapperextensions@1.1
 
 # Dexpreopt
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := true
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SettingsGoogle \
     SystemUIGoogle

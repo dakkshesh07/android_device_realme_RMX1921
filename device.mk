@@ -17,9 +17,6 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 RELAX_USES_LIBRARY_CHECK := true
 OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
-# VNDK
-PRODUCT_TARGET_VNDK_VERSION := 30
-
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -39,7 +36,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
 # Audio
-
 AUDIO_CONFIG_DIR := hardware/qcom-caf/sm8350/audio/configs/sdm710
 
 PRODUCT_PACKAGES += \

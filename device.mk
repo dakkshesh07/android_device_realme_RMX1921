@@ -163,7 +163,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.0 \
-    vendor.qti.hardware.display.mapperextensions@1.1
+    vendor.qti.hardware.display.mapperextensions@1.1 \
+    android.hardware.graphics.common-V1-ndk_platform
 
 # Dexpreopt
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
@@ -299,7 +300,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libmediaplayerservice
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -321,6 +323,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
+
+AUDIO_FEATURE_ENABLED_EXTN_RESAMPLER := true
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    vendor.mm.enable.qcom_parser=16777215
 
 # Native libraries whitelist
 PRODUCT_COPY_FILES += \
@@ -548,11 +554,16 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac_vendor
+    libwfdaac_vendor \
+    libnl
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    debug.sf.enable_hwc_vds=1 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
 
 # Wi-Fi
 PRODUCT_PACKAGES += \

@@ -39,16 +39,16 @@ persist.vendor.audio.fluence.voicecomm=true
 vendor.audio.feature.a2dp_offload.enable=false
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
-vendor.audio.feature.battery_listener.enable=false
+vendor.audio.feature.battery_listener.enable=true
 vendor.audio.feature.compr_cap.enable=false
-vendor.audio.feature.compress_in.enable=false
+vendor.audio.feature.compress_in.enable=true
 vendor.audio.feature.compress_meta_data.enable=true
 vendor.audio.feature.compr_voip.enable=false
-vendor.audio.feature.concurrent_capture.enable=false
+vendor.audio.feature.concurrent_capture.enable=true
 vendor.audio.feature.custom_stereo.enable=true
 vendor.audio.feature.display_port.enable=true
 vendor.audio.feature.dsm_feedback.enable=false
-vendor.audio.feature.dynamic_ecns.enable=false
+vendor.audio.feature.dynamic_ecns.enable=true
 vendor.audio.feature.ext_hw_plugin.enable=false
 vendor.audio.feature.external_dsp.enable=false
 vendor.audio.feature.external_speaker.enable=false
@@ -62,7 +62,7 @@ vendor.audio.feature.hifi_audio.enable=true
 vendor.audio.feature.hwdep_cal.enable=false
 vendor.audio.feature.incall_music.enable=true
 vendor.audio.feature.multi_voice_session.enable=true
-vendor.audio.feature.keep_alive.enable=false
+vendor.audio.feature.keep_alive.enable=true
 vendor.audio.feature.kpi_optimize.enable=true
 vendor.audio.feature.maxx_audio.enable=false
 vendor.audio.feature.ras.enable=true
@@ -71,7 +71,7 @@ vendor.audio.feature.src_trkn.enable=true
 vendor.audio.feature.spkr_prot.enable=true
 vendor.audio.feature.ssrec.enable=true
 vendor.audio.feature.usb_offload.enable=true
-vendor.audio.feature.usb_offload_burst_mode.enable=false
+vendor.audio.feature.usb_offload_burst_mode.enable=true
 vendor.audio.feature.usb_offload_sidetone_volume.enable=false
 vendor.audio.feature.deepbuffer_as_primary.enable=false
 vendor.audio.feature.vbat.enable=true
@@ -120,6 +120,10 @@ debug.stagefright.omx_default_rank=0
 
 # Display
 vendor.display.enable_default_color_mode=1
+debug.renderengine.backend=skiaglthreaded
+debug.sf.disable_client_composition_cache=1
+debug.sf.predict_hwc_composition_strategy=0
+debug.sf.treat_170m_as_sRGB=1
 ro.vendor.display.cabl=2
 ro.sf.lcd_density=420
 
@@ -134,6 +138,8 @@ vendor.product.manufacturer=OPD
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
+persist.vendor.dpm.feature=11
+persist.vendor.dpm.idletimer.mode=default
 
 # DRM
 drm.service.enabled=true
@@ -161,17 +167,28 @@ persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.add_power_save=1
 persist.vendor.radio.mt_sms_ack=30
+persist.vendor.ims.disableADBLogs=1
+persist.vendor.ims.disableDebugLogs=1
+persist.vendor.ims.disableIMSLogs=1
+persist.vendor.ims.disableQXDMLogs=1
 
 # Keystore
 ro.hardware.keystore_desede=true
 
-# Netflix custom property
+# Netflix
 ro.netflix.bsp_rev=Q670-14477-1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
+DEVICE_PROVISIONED=1
+net.tethering.noprovisioning=true
+persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.vendor.rcs.singlereg.feature=1
+ril.subscription.types=NV,RUIM
+ro.telephony.default_network=33,33
+ro.telephony.sim_slots.count=2
 persist.vendor.radio.enableadvancedscan=false
 
 # SoC

@@ -152,6 +152,10 @@ vendor/lib64/libtinycompress.so
 # Audio Firmware
 odm/firmware/tfa98xx.cnt
 
+# Audio (spatial) - from cheetah-user 13 TQ3A.230705.001 10216780 release-keys
+vendor/lib/soundfx/libspatialaudio.so
+vendor/lib64/soundfx/libspatialaudio.so
+
 # Bluetooth - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|275aeb202001803c6bd6d632bf7958c8775468ad
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959

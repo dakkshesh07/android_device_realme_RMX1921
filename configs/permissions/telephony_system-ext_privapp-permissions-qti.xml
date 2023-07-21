@@ -80,4 +80,9 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.android.cellbroadcastreceiver.module">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </privapp-permissions>
+
 </permissions>

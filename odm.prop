@@ -1,2 +1,7 @@
 # QC framework value-adds
 ro.vendor.qti.va_odm.support=1
+
+# Radio
+persist.vendor.radio.force_on_dc=true
+persist.vendor.radio.poweron_opt=1
+ro.sys.reserve.integrate=true

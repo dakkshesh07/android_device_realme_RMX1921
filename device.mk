@@ -536,6 +536,28 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 
+# Properties
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    DEVICE_PROVISIONED=1 \
+    net.tethering.noprovisioning=true \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
+    persist.vendor.cne.feature=1 \
+    persist.vendor.data.mode=concurrent \
+    persist.vendor.dpm.feature=11 \
+    persist.vendor.dpm.idletimer.mode=default \
+    ril.subscription.types=NV,RUIM \
+    ro.telephony.default_network=33,33 \
+    ro.telephony.sim_slots.count=2 \
+    ro.vendor.use_data_netmgrd=true \
+    telephony.active_modems.max_count=2 \
+    telephony.lteOnCdmaDevice=1 \
+    persist.vendor.ims.disableADBLogs=1 \
+    persist.vendor.ims.disableDebugLogs=1 \
+    persist.vendor.ims.disableIMSLogs=1 \
+    persist.vendor.ims.disableQXDMLogs=1 \
+    persist.vendor.radio.rat_on=combine \
+    persist.vendor.radio.poweron_opt=1
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti

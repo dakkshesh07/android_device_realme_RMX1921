@@ -31,7 +31,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.mmdisplayfeature@1\.0-service               u:object_r:oppo_display_default_exec:s0
 
 # Partitions
-/dev/block/platform/soc/1d84000.ufshc/by-name/logdump   u:object_r:metadata_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/vendor   u:object_r:system_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/odm   u:object_r:system_block_device:s0
 

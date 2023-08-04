@@ -153,8 +153,8 @@ vendor/lib64/libtinycompress.so
 odm/firmware/tfa98xx.cnt
 
 # Audio (spatial) - from cheetah-user 13 TQ3A.230705.001 10216780 release-keys
-vendor/lib/soundfx/libspatialaudio.so
-vendor/lib64/soundfx/libspatialaudio.so
+vendor/lib/soundfx/libspatialaudio.so|b26727b8887dad56f5e183f7145487c88bd2f065
+vendor/lib64/soundfx/libspatialaudio.so|f5a21e781fac818dcc55d3aa792e2a1902619bdd
 
 # Bluetooth - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|275aeb202001803c6bd6d632bf7958c8775468ad
@@ -1710,8 +1710,8 @@ vendor/bin/cnss-daemon
 
 # Wifi Display (system) - from LA.QSSI.13.0.r1-10000.02-qssi.0
 system/framework/WfdCommon.jar|a15be8c1f266dad39c74ce9e3eb877669290ef19
-system_ext/bin/wfdservice|cd0638589d1f652d5d40673105dd3ee63856cb88
 system_ext/bin/wfdservice64|3326f77c84ac3b164d3ac4696292ad4ea9f20b72
+system_ext/bin/wfdservice|cd0638589d1f652d5d40673105dd3ee63856cb88
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|828999946f9dfef98f17f42a1c8daba47c2c442d
 system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db459fe07ec

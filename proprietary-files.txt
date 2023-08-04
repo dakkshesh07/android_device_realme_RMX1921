@@ -81,8 +81,8 @@ vendor/lib64/com.dsi.ant@1.0.so
 system_ext/bin/qxrsplitauxservice|048613348c961d7470a54aefed59f7782947ee4b
 system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
 system_ext/etc/seccomp_policy/sxraux-arm.policy|641a5c68c9842e9defc052b6b401c5e8a4c2d2de
--system_ext/framework/audiosphere.jar|ecfaddf551830ccb6f5b0b979a407eccc9305e94
--system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar|83305cd1eb4a03e69557d902ad96ba73bb96d563
+system_ext/framework/audiosphere.jar|ecfaddf551830ccb6f5b0b979a407eccc9305e94
+system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar|83305cd1eb4a03e69557d902ad96ba73bb96d563
 system_ext/lib/libbinauralrenderer_wrapper.qti.so|0ce8a90a85c87241acb46b6546c981998af53c97
 system_ext/lib/libhoaeffects.qti.so|c387ddcbe3525f16e56c610855f2562418507c0b
 system_ext/lib/libhoaeffects_csim.so|729f6119dbff492a03d26acaa45d60c78af77483
@@ -629,7 +629,7 @@ system_ext/lib64/vendor.qti.latency@2.1.so|84ec92d7b1aea233323a1867bf62229949a41
 system_ext/lib64/vendor.qti.latency@2.2.so|64e07c034c1b1e9765d1ac872b55fcea540ad397
 
 # CNE
--vendor/app/CneApp/CneApp.apk
+vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
@@ -757,8 +757,8 @@ vendor/lib64/vendor.display.postproc@1.0.so|e56b66d744dd77bd87afbb30cab558acf157
 
 # Dolby - from OnePlus 9R OOS 11.2.8.8
 system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
--system_ext/priv-app/DaxUI/DaxUI.apk|89e8ceabb19458b872eed0560a627eb2ff4c4dc4
--system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
+system_ext/priv-app/DaxUI/DaxUI.apk|89e8ceabb19458b872eed0560a627eb2ff4c4dc4
+system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|84247a3563b362e97dacaa79d4845c1292a92f13
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
 vendor/lib/soundfx/libeffectproxy.so|44289fe864b085d53c051ad42ed233727ced175c
@@ -809,7 +809,7 @@ system_ext/lib64/libdpmtcm.so|57b6c42d581305d8ef16aa127cd4cd1672d2e7f1
 system_ext/lib64/vendor.qti.diaghal@1.0.so|ffab1580dbc117104f21208c3940e4f14c2d1b37
 system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so|b8a26b454b823442c156d8e71cd36ff060308b65
 system_ext/lib64/vendor.qti.hardware.dpmservice@1.1.so|6b9c97719910a3aa72f66e2c2c3b5e981d884bd9
--system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|a2801e43710179694a1a765cea2a0fe376625c5e
+system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|a2801e43710179694a1a765cea2a0fe376625c5e
 
 # DPM (vendor)
 vendor/bin/dpmQmiMgr
@@ -1050,13 +1050,13 @@ vendor/bin/hw/android.hardware.health@2.1-service
 vendor/etc/init/android.hardware.health@2.1-service.rc
 
 # HotwordEnrollment - from vayu
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|47cd4ed29ce7a556dcdf9b1be6675ddbbb7fca63
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|3d8943911ae38e0604f46f34c1a295371b483af4
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|47cd4ed29ce7a556dcdf9b1be6675ddbbb7fca63
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|3d8943911ae38e0604f46f34c1a295371b483af4
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
 
 # IMS (system) - from LA.QSSI.13.0.r1-10000.02-qssi.0
--system_ext/app/ImsRcsService/ImsRcsService.apk|a52299c150e042c0b8b7a1ea8b26096e9c66ac98
+system_ext/app/ImsRcsService/ImsRcsService.apk|a52299c150e042c0b8b7a1ea8b26096e9c66ac98
 system_ext/app/imssettings/imssettings.apk|edd509270a9dee034ad47ca307d5e7c0648c5d56
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|bd9fc166b542b4e730f194ebc996957770d9d497
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|b40fc74f7d5e58b4e918f952b89a79cf2a5c4088
@@ -1136,7 +1136,7 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so|6f60384c1c3747744f13c40a1be2ead
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|ace5e02b6cd79b43a07d84e2d18d6818821a3c48
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|e64aa8a21a8db69d2e2ea14929bb20ced99c119d
 system_ext/lib64/vendor.qti.mstatservice@1.0.so|e17aa8f4161c681a9a6d436848d14f22f4363380
--system_ext/priv-app/ims/ims.apk|446d0285830d87f96d9a9054873a7e17dc8ef7ff
+system_ext/priv-app/ims/ims.apk|446d0285830d87f96d9a9054873a7e17dc8ef7ff
 
 # IMS (vendor)
 vendor/bin/ims_rtp_daemon
@@ -1311,7 +1311,7 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Power-off Alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk
+product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -1362,9 +1362,9 @@ vendor/lib64/libqmiservices.so
 
 # RIL (system) - from LA.QSSI.13.0.r1-10000.02-qssi.0
 system_ext/app/DeviceInfo/DeviceInfo.apk|82005af803806101853d128719b0b3d44ae53581
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|11a3418c677c6c3cf6e1ba355c561af190d48901
+system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|11a3418c677c6c3cf6e1ba355c561af190d48901
 system_ext/app/embms/embms.apk|b328cdde5fdb55ab03793ce5ab5ac056f96a2917
--system_ext/app/uceShimService/uceShimService.apk|66149895386f671c63f851fd5ddfc5b92531e2c5
+system_ext/app/uceShimService/uceShimService.apk|66149895386f671c63f851fd5ddfc5b92531e2c5
 system_ext/etc/permissions/embms-noship_product_privapp_permissions_qti.xml|fe893ef12f3fe036e3d462e010f031b94f218e38
 system_ext/etc/permissions/embms.xml|22e7474091f9f71f02dd0cfc76cfa8848a46f079
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
@@ -1402,10 +1402,10 @@ system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|6c888c84eb0f
 system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so|64130dacddc360a58e170c1375e949e8bc1dbf03
 system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so|a8c4f88ce885daf2def939b96ec873bd156fa39f
 system_ext/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|60f6244c12eed74cd94f3a0ddc7b57376189a938
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|0a71669508da582ed47c83ffd45bd5c5932b4a5e
+system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|0a71669508da582ed47c83ffd45bd5c5932b4a5e
 
 # RIL (vendor)
--vendor/app/IWlanService/IWlanService.apk
+vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrild
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
@@ -1641,7 +1641,7 @@ vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 
 # Soter
--vendor/app/SoterService/SoterService.apk
+vendor/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
@@ -1659,7 +1659,7 @@ vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 
 # Time Services
--vendor/app/TimeService/TimeService.apk
+vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib/libtime_genoff.so
@@ -1705,7 +1705,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so|ca1906012d0ab6dc9048aa49703833512308
 vendor/bin/cnss-daemon
 
 # Wifi Display (system) - from LA.QSSI.13.0.r1-10000.02-qssi.0
--system/framework/WfdCommon.jar|a15be8c1f266dad39c74ce9e3eb877669290ef19
+system/framework/WfdCommon.jar|a15be8c1f266dad39c74ce9e3eb877669290ef19
 system_ext/bin/wfdservice|cd0638589d1f652d5d40673105dd3ee63856cb88
 system_ext/bin/wfdservice64|3326f77c84ac3b164d3ac4696292ad4ea9f20b72
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
@@ -1754,7 +1754,7 @@ system_ext/lib64/libwfduibcsinkinterface.so|5d6c4e843370101a0dd53a23f0247ff71164
 system_ext/lib64/libwfduibcsrc.so|1529ca18c3484b8a3f3d95e9198def564e86fda3
 system_ext/lib64/libwfduibcsrcinterface.so|b4925a4e75f522ff6d70534e075f2fea24c5c64f
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so|d44d8dc8f286145fcd73b40d328194f67d1fbc95
--system_ext/priv-app/WfdService/WfdService.apk|d2c28301bfdbd9200f682623567ab21e8d02c4fe
+system_ext/priv-app/WfdService/WfdService.apk|d2c28301bfdbd9200f682623567ab21e8d02c4fe
 
 # WiFi Display (vendor) - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
 vendor/bin/wfdhdcphalservice|c7a2d70190d8a90a8ed326af0add5cf7c99d1ab6

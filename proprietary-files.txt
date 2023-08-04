@@ -206,7 +206,6 @@ vendor/etc/camera/distortionParams.bin
 vendor/etc/camera/faceTpl0.rgb32
 vendor/etc/camera/faceTpl1.rgb32
 vendor/etc/camera/gasryuv.model
-vendor/etc/camera/license.lic
 vendor/etc/camera/mtStereoParams.bin
 vendor/etc/camera/mwStereoParams.bin
 vendor/etc/camera/skinSeg.model

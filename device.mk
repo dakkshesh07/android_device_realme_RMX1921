@@ -125,9 +125,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     libgui_vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/camera/license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/license.lic
-
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend

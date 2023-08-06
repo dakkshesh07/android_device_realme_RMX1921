@@ -37,7 +37,7 @@ persist.vendor.audio.hifi.int_codec=true
 vendor.audio.keep_alive.disabled=false
 vendor.audio.volume.headset.gain.depcal=true
 persist.vendor.audio.fluence.voicecomm=true
-vendor.audio.feature.a2dp_offload.enable=false
+vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
 vendor.audio.feature.battery_listener.enable=true
@@ -105,7 +105,7 @@ persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.enable.splita2dp=true
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
-persist.bluetooth.a2dp_offload.disabled=true
+persist.bluetooth.a2dp_offload.disabled=false
 ro.bluetooth.a2dp_offload.supported=true
 
 # Camera

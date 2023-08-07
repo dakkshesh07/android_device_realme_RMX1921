@@ -163,7 +163,6 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|d1e548c8845d17a56cc56
 vendor/lib64/libbtnv.so|07e031527e60ce5e62a5017fd1d7ff83ef1aafcf
 
 # Bluetooth (A2DP) - from Nokia/Phoenix_00WW/PNX_sprout:11/RKQ1.200906.002/00WW_6_21F:user/release-keys
-vendor/lib/hw/audio.bluetooth_qti.default.so|42a280552aea8dbce25e3e77b85ac5338cf3e7e5
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|4bed8d0cc4d2747a6f48fbbff5cd01dbc42c28d8
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|61c91107a4032634f1520340e75f015e44fd8dbc
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|cd605197212985e56a3b0e978051c3e5ed74061a
@@ -172,7 +171,6 @@ vendor/lib/btaudio_offload_if.so|7c032ba00c5bbb7a6e265339dc63341888efe55f
 vendor/lib/libbluetooth_audio_session_qti.so|f247b051439bc769f614893a011a75a155734544
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|7e4587a1ac13de4d1ee8463b3aae487346f31b12
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|fbce94fed6a22fd527506d14d10a4df785b8fa25
-vendor/lib64/hw/audio.bluetooth_qti.default.so|689714a8332af7809a36ca4e470ea9c72cbd520f
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|b432721db233cec4f252518adcb437ffe28e0054
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|a97a6c330c932176acee0bce820c6e737778aed4
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|2dd88fe287eb63058b5d2fe19277439b120882d2

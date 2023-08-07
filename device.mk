@@ -70,6 +70,7 @@ PRODUCT_PACKAGES += \
     libcirrusspkrprot \
     libspkrprot \
     libhdmiedid \
+    liba2dpoffload \
     libexthwplugin \
     libhfp \
     libbatterylistener \

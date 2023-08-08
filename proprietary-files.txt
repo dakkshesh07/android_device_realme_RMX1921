@@ -73,9 +73,7 @@ system_ext/lib64/com.qualcomm.qti.ant@1.0.so|e4191dde72003e9f824167f3d62bcf90655
 
 # ANT+ (vendor)
 vendor/lib/hw/com.dsi.ant@1.0-impl.so
-vendor/lib/com.dsi.ant@1.0.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
-vendor/lib64/com.dsi.ant@1.0.so
 
 # Audio (system) - from LA.QSSI.13.0.r1-09700-qssi.0
 system_ext/bin/qxrsplitauxservice|048613348c961d7470a54aefed59f7782947ee4b

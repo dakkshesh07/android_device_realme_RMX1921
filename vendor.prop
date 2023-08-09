@@ -123,7 +123,6 @@ debug.stagefright.omx_default_rank=0
 
 # Display
 vendor.display.enable_default_color_mode=1
-debug.renderengine.backend=skiaglthreaded
 debug.sf.disable_client_composition_cache=1
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1

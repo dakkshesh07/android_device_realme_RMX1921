@@ -159,6 +159,7 @@ ro.opengles.version=196610
 debug.sf.disable_client_composition_cache=1
 debug.sf.predict_hwc_composition_strategy=0
 ro.hardware.egl=adreno
+graphics.gpu.profiler.support=true
 ro.hardware.vulkan=adreno
 
 # IMS

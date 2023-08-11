@@ -102,7 +102,3 @@
 # Dolby
 /(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                        u:object_r:hal_dms_default_exec:s0
 /data/vendor/dolby(/.*)?   u:object_r:vendor_data_file:s0
-
-# QtiMapper-Shim blobs
-/vendor/lib(64)?/vendor\.qti\.hardware\.display\.mappershim\.so                u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/android\.hardware\.graphics\.mappershim\.so                   u:object_r:same_process_hal_file:s0

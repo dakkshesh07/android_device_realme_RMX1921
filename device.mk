@@ -144,6 +144,8 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.graphics.mapper@2.0-impl-qti-display \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     gralloc.sdm710 \
@@ -165,7 +167,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.0 \
     vendor.qti.hardware.display.mapperextensions@1.1 \
-    android.hardware.graphics.common-V1-ndk_platform
+    android.hardware.graphics.common-V1-ndk.vendor \
+    android.hardware.graphics.common-V1-ndk_platform.vendor
 
 # Dexpreopt
 USE_DEX2OAT_DEBUG := false

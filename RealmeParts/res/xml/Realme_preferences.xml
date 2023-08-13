@@ -18,13 +18,6 @@
         android:key="audio"
         android:title="@string/audio_title">
 
-        <PreferenceScreen
-                android:key="sound"
-                android:fragment="org.device.RealmeParts.audio.SoundControlSettingsActivity"
-                android:summary="@string/gain_summary"
-                android:title="@string/audio_gain_settings"
-                settings:iconSpaceReserved="false"/>
-
         <Preference
             android:key="audio_dolby_atmos"
             android:title="@string/dolby_title"
@@ -69,14 +62,6 @@
             android:key="hbm_autobrightness_threshould"
             android:title="@string/hbm_autobrightness_threshold_title"
             android:summary="@string/hbm_autobrightness_threshold_summary" />
-
-
-         <PreferenceScreen
-                android:key="kcal"
-                android:fragment="org.device.RealmeParts.kcal.DisplayCalibration"
-                android:summary="@string/kcal_summary"
-                android:title="@string/kcal_title"
-                settings:iconSpaceReserved="false"/>
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -94,20 +79,6 @@
                 android:summary="@string/gestures_dashboard_summary"
                 android:title="@string/screen_off_gestures"
                 settings:iconSpaceReserved="false"/>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="vibration"
-        android:title="@string/vibration_title">
-        <Preference
-                android:key="vibrator"
-                android:title="@string/vibration_title"
-                android:summary="@string/vibration_summary">
-                <intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetClass="org.device.RealmeParts.vibrator.VibratorSettingsActivity"
-                    android:targetPackage="org.device.RealmeParts" />
-            </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory

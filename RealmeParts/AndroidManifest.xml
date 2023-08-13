@@ -84,27 +84,6 @@
         </activity>
 
         <activity
-            android:name=".audio.SoundControlSettingsActivity"
-            android:exported="true"
-            android:theme="@style/Theme.SubSettingsBase"
-            android:label="@string/audio_gain_settings">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".kcal.DisplayCalibration"
-            android:theme="@style/Theme.SubSettingsBase"
-            android:label="@string/kcal_title"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-        </activity>
-        <service android:name="org.device.RealmeParts.kcal.KcalService"></service>
-
-        <activity
             android:name=".speaker.ClearSpeakerActivity"
             android:label="@string/clear_speaker_title"
             android:theme="@style/Theme.SubSettingsBase"
@@ -114,15 +93,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".vibrator.VibratorSettingsActivity"
-            android:label="@string/vibration_title"
-            android:theme="@style/Theme.SubSettingsBase"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-        </activity>
         <!-- Quick Settings Tiles -->
         <service
             android:name="org.device.RealmeParts.GameModeTileService"

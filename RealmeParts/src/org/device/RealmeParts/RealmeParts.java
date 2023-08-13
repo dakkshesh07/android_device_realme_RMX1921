@@ -44,11 +44,8 @@ import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.TwoStatePreference;
 
-
 import org.device.RealmeParts.ModeSwitch.GameModeSwitch;
 import org.device.RealmeParts.Touch.ScreenOffGestureSettings;
-import org.device.RealmeParts.audio.SoundControlSettingsActivity;
-import org.device.RealmeParts.kcal.DisplayCalibration;
 import org.device.RealmeParts.preferences.CustomSeekBarPreference;
 import org.device.RealmeParts.preferences.SecureSettingListPreference;
 import org.device.RealmeParts.preferences.SecureSettingSwitchPreference;
@@ -76,8 +73,6 @@ public class RealmeParts extends PreferenceFragment
     private static TwoStatePreference mOTGModeSwitch;
     private static TwoStatePreference mGameModeSwitch;
     private Preference mGesturesPref;
-    private Preference mKcalPref;
-    private Preference mAudioPref;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -112,26 +107,6 @@ public class RealmeParts extends PreferenceFragment
                      @Override
                      public boolean onPreferenceClick(Preference preference) {
                          Intent intent = new Intent(getContext(), ScreenOffGestureSettings.class);
-                         startActivity(intent);
-                         return true;
-                     }
-                });
-
-        mKcalPref = findPreference("kcal");
-                mKcalPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                     @Override
-                     public boolean onPreferenceClick(Preference preference) {
-                         Intent intent = new Intent(getContext(), DisplayCalibration.class);
-                         startActivity(intent);
-                         return true;
-                     }
-                });
-
-        mAudioPref = findPreference("sound");
-                mAudioPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                     @Override
-                     public boolean onPreferenceClick(Preference preference) {
-                         Intent intent = new Intent(getContext(), SoundControlSettingsActivity.class);
                          startActivity(intent);
                          return true;
                      }

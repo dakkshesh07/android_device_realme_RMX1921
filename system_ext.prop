@@ -40,7 +40,8 @@ dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.image-dex2oat-filter=speed
 dalvik.vm.image-dex2oat-threads=8
 
-# Display post-processing
+# Display
+ro.sf.lcd_density=420
 persist.vendor.display.lcd.panel=true
 vendor.display.comp_mask=2
 ro.qualcomm.cabl=0

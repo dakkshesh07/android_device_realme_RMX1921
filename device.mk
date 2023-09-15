@@ -210,7 +210,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xt \
+    android.hardware.biometrics.fingerprint@2.3-service.RMX1921 \
     android.hardware.biometrics.fingerprint@2.3.vendor \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
@@ -296,7 +296,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.realme_sdm710
+    android.hardware.lights-service.RMX1921
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -385,7 +385,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -479,7 +478,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.class_main.sh \
-    init.RealmeParts.rc \
     init.oppo.rc \
     init.oppo.display.rc \
     init.qcom.factory.rc \
@@ -505,15 +503,11 @@ PRODUCT_COPY_FILES += \
 
 # Realme specific packages
 PRODUCT_PACKAGES += \
-    RealmeParts \
     RealmeProximityHelper
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp_whitelist_org.device.Realmeparts.xml:system/etc/permissions/privapp_whitelist_org.device.Realmeparts.xml
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal.xt \
+    android.hardware.sensors@2.0-service.multihal.RMX1921 \
     libsensorndkbridge
 
 # Soong namespaces

@@ -1,0 +1,20 @@
+cc_binary {
+    name: "android.hardware.lights-service.RMX1921",
+    init_rc: ["android.hardware.lights-service.RMX1921.rc"],
+    vintf_fragments: ["lights.xml"],
+    relative_install_path: "hw",
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.light-V1-ndk",
+    ],
+    srcs: [
+        "Light.cpp",
+        "service.cpp",
+    ],
+    proprietary: true,
+    overrides: [
+        "lights.qcom",
+        "android.hardware.lights-service.qti",
+    ],
+}

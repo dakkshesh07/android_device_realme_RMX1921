@@ -1054,12 +1054,6 @@ vendor/firmware/a640_gmu.bin
 vendor/lib/hw/vulkan.adreno.so|e1ea643a938b2c838f3d3e6dd6889adfb4a077f0
 vendor/lib64/hw/vulkan.adreno.so|e8aaf8626b500ddc95400e0502d458ce4a96ad51
 
-# HotwordEnrollment - from vayu
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|47cd4ed29ce7a556dcdf9b1be6675ddbbb7fca63
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|3d8943911ae38e0604f46f34c1a295371b483af4
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
-system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
-
 # IMS (system) - from LA.QSSI.13.0.r1-10000.02-qssi.0
 system_ext/app/ImsRcsService/ImsRcsService.apk|a52299c150e042c0b8b7a1ea8b26096e9c66ac98
 system_ext/app/imssettings/imssettings.apk|edd509270a9dee034ad47ca307d5e7c0648c5d56

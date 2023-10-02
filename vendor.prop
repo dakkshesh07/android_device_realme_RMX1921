@@ -181,6 +181,9 @@ ro.hardware.keystore_desede=true
 # Netflix
 ro.netflix.bsp_rev=Q670-14477-1
 
+# Network manager
+persist.vendor.data.iwlan.enable=true
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 

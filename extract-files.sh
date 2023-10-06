@@ -53,6 +53,36 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+adreno_blob_fixup() {
+    patchelf --replace-needed "vendor.qti.hardware.display.mapper@3.0.so" "vendor.qti.hardware.display.mappershim.so" "${1}"
+    patchelf --replace-needed "vendor.qti.hardware.display.mapper@4.0.so" "vendor.qti.hardware.display.mappershim.so" "${1}"
+    patchelf --replace-needed "android.hardware.graphics.mapper@3.0.so" "android.hardware.graphics.mappershim.so" "${1}"
+    patchelf --replace-needed "android.hardware.graphics.mapper@4.0.so" "android.hardware.graphics.mappershim.so" "${1}"
+}
+
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib/egl/eglSubDriverAndroid.so)
+            adreno_blob_fixup "${2}"
+            ;;
+        vendor/lib64/egl/eglSubDriverAndroid.so)
+            adreno_blob_fixup "${2}"
+            ;;
+        vendor/lib64/libCB.so)
+            adreno_blob_fixup "${2}"
+            ;;
+        vendor/lib/libCB.so)
+            adreno_blob_fixup "${2}"
+            ;;
+        vendor/lib/hw/vulkan.adreno.so)
+            adreno_blob_fixup "${2}"
+            ;;
+        vendor/lib64/hw/vulkan.adreno.so)
+            adreno_blob_fixup "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 

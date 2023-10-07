@@ -14,26 +14,26 @@
  * limitations under the License.
  */
 
+#include "HalProxy.h"
 #include <android/hardware/sensors/2.0/ISensors.h>
 #include <hidl/HidlTransportSupport.h>
 #include <log/log.h>
 #include <utils/StrongPointer.h>
-#include "HalProxy.h"
 
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 using android::hardware::sensors::V2_0::ISensors;
 using android::hardware::sensors::V2_1::implementation::HalProxyV2_0;
 
-int main(int /* argc */, char** /* argv */) {
-    configureRpcThreadpool(1, true);
+int main(int /* argc */, char ** /* argv */) {
+  configureRpcThreadpool(1, true);
 
-    android::sp<ISensors> halProxy = new HalProxyV2_0();
-    if (halProxy->registerAsService() != ::android::OK) {
-        ALOGE("Failed to register Sensors HAL instance");
-        return -1;
-    }
+  android::sp<ISensors> halProxy = new HalProxyV2_0();
+  if (halProxy->registerAsService() != ::android::OK) {
+    ALOGE("Failed to register Sensors HAL instance");
+    return -1;
+  }
 
-    joinRpcThreadpool();
-    return 1;  // joinRpcThreadpool shouldn't exit
+  joinRpcThreadpool();
+  return 1; // joinRpcThreadpool shouldn't exit
 }

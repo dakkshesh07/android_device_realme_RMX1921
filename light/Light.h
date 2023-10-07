@@ -18,10 +18,10 @@
 
 #include <aidl/android/hardware/light/BnLights.h>
 
-using ::aidl::android::hardware::light::HwLightState;
-using ::aidl::android::hardware::light::HwLight;
-using ::aidl::android::hardware::light::LightType;
 using ::aidl::android::hardware::light::BnLights;
+using ::aidl::android::hardware::light::HwLight;
+using ::aidl::android::hardware::light::HwLightState;
+using ::aidl::android::hardware::light::LightType;
 
 namespace aidl {
 namespace android {
@@ -30,14 +30,15 @@ namespace light {
 
 class Lights : public BnLights {
 public:
-      ndk::ScopedAStatus setLightState(int id, const HwLightState& state) override;
-      ndk::ScopedAStatus getLights(std::vector<HwLight>* types) override;
+  ndk::ScopedAStatus setLightState(int id, const HwLightState &state) override;
+  ndk::ScopedAStatus getLights(std::vector<HwLight> *types) override;
+
 private:
-      uint32_t RgbaToBrightness(uint32_t color);
-      bool WriteToFile(const std::string& path, uint32_t content);
+  uint32_t RgbaToBrightness(uint32_t color);
+  bool WriteToFile(const std::string &path, uint32_t content);
 };
 
-}  // namespace light
-}  // namespace hardware
-}  // namespace android
-}  // namespace aidl
+} // namespace light
+} // namespace hardware
+} // namespace android
+} // namespace aidl

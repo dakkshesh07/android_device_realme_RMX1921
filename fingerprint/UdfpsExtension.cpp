@@ -18,9 +18,7 @@
 #include <drm/sde_drm.h>
 
 uint32_t getUdfpsZOrder(uint32_t z, bool touched) {
-    return touched ? z | FOD_PRESSED_LAYER_ZORDER : z;
+  return touched ? z | FOD_PRESSED_LAYER_ZORDER : z;
 }
 
-uint64_t getUdfpsUsageBits(uint64_t usageBits, bool) {
-    return usageBits;
-}
+uint64_t getUdfpsUsageBits(uint64_t usageBits, bool) { return usageBits; }

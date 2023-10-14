@@ -81,10 +81,7 @@ function blob_fixup() {
         vendor/lib64/hw/vulkan.adreno.so)
             adreno_blob_fixup "${2}"
             ;;
-        odm/lib64/libwvhidl.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
-        odm/lib64/mediadrm/libwvdrmengine.so)
+        vendor/bin/sensors.qti | vendor/lib64/sensors.ssc.so | vendor/lib64/libssc.so | vendor/lib64/libsensorcal.so | vendor/lib64/libsnsdiaglog.so | vendor/lib64/libsnsapi.so | vendor/lib/sensors.ssc.so | vendor/lib/libssc.so | vendor/lib/libsensorcal.so | vendor/lib/libsnsdiaglog.so | vendor/lib/libsnsapi.so | odm/lib64/mediadrm/libwvdrmengine.so | odm/lib64/libwvhidl.so )
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
     esac

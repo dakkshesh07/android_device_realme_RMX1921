@@ -16,6 +16,9 @@ TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 # Inherit from RMX1921 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Viper
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Device identifier.
 PRODUCT_NAME := aosp_RMX1921
 PRODUCT_DEVICE := RMX1921

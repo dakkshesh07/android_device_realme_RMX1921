@@ -116,9 +116,6 @@ ro.bluetooth.a2dp_offload.supported=true
 persist.camera.HAL3.enabled=1
 persist.camera.gyro.disable=0
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Codec2
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
@@ -133,7 +130,6 @@ ro.sf.lcd_density=420
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
-persist.vendor.dpm.feature=11
 persist.vendor.dpm.idletimer.mode=default
 
 # DRM
@@ -193,7 +189,7 @@ persist.vendor.radio.sib16_support=1
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.lte_vrte_ltd=1
 persist.vendor.qti.telephony.vt_cam_interface=2
-persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.enableadvancedscan=false
 
 # SoC
 ro.soc.manufacturer=Qualcomm

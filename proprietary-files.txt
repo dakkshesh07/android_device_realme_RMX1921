@@ -68,8 +68,8 @@ vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
 # ANT+ (system) - from LA.QSSI.14.0.r1
-system_ext/lib/com.qualcomm.qti.ant@1.0.so|c0be7926f82c72090b25f86d942f202e677cbde3
-system_ext/lib64/com.qualcomm.qti.ant@1.0.so|e4191dde72003e9f824167f3d62bcf9065578a12
+system_ext/lib/com.qualcomm.qti.ant@1.0.so|695c6f271203d561d798d49c7c496c2f852d5581
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so|80096a66b18cec640d462cb17bce3adee8a27038
 
 # ANT+ (vendor)
 vendor/lib/hw/com.dsi.ant@1.0-impl.so

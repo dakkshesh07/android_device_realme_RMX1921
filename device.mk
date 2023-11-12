@@ -547,7 +547,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     qti-telephony-utils-prd \
     qti_telephony_utils_prd.xml \
-    telephony-ext
+    telephony-ext \
+    vendor.qti.hardware.systemhelperaidl-V1-ndk
 
 PRODUCT_BOOT_JARS += \
     telephony-ext

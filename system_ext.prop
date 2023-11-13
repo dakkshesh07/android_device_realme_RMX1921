@@ -9,9 +9,6 @@ ro.camera.attr.detect.enable=1
 ro.camera.notify_nfc=1
 camera.disable_zsl_mode=true
 
-# Charger
-ro.charger.enable_suspend=true
-
 # Data modules
 persist.data.df.dev_name=rmnet_usb0 
 persist.vendor.data.mode=concurrent 

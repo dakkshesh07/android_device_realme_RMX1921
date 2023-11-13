@@ -1095,6 +1095,7 @@ system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar|b29c69abe5c3b4fc9ceb7f
 system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar|b870964be5fe952385718e23cf3e56a65bf1cad8
 system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar|c36b5f62fd43d62bff6282320f3ed2ea0a18c27d
 system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar|50c52c569b10da97639d4fc0004c0df2ee5a01ab
+system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar|329df8446cba8cb3a16dab1d0fc5624f1ac8ffe5
 system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar|e4cef76fb7bc621f543ee2cd24b227fb6e2107e7
 system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar|da7272ec876d17e3d7690ebbb288ca45f3fbd3b9
 system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar|5929c072c17e1cf26cd1c94da643bf801bf21c47

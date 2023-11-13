@@ -293,6 +293,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service \
     libminijail \
     libavservices_minijail \
     libavservices_minijail.vendor \

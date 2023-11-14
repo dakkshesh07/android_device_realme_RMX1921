@@ -57,3 +57,6 @@ type proc_vibration_file, sysfs_type, fs_type;
 
 # I/O Scheduler
 type sysfs_io_sched_tuneable, fs_type, sysfs_type;
+
+# NFC sku
+type nfc_sku, fs_type, sysfs_type;

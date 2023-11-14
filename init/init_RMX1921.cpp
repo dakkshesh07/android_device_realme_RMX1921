@@ -63,7 +63,19 @@ void load_dalvikvm_properties() {
   }
 }
 
+void nfc_sku_support() {
+  std::ifstream nfcSupportFile("/sys/module/pn553/parameters/sku_support_nfc");
+  std::string nfcSupportSku;
+
+  std::getline(nfcSupportFile, nfcSupportSku);
+  if (nfcSupportSku == "1") {
+    property_override("ro.boot.product.hardware.sku", "nfc");
+  }
+}
+
 void vendor_load_properties() {
+  //
+  nfc_sku_support();
   // dalvikvm props
   load_dalvikvm_properties();
   // SafetyNet workaround

@@ -49,3 +49,13 @@ service vendor.sensors-hal-2-0-multihal /vendor/bin/hw/android.hardware.sensors@
     task_profiles ServiceCapacityLow
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
+
+on property:ro.boot.product.hardware.sku=nfc
+    start vendor.nfc_hal_service
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    disabled
+    class hal
+    user nfc
+    group nfc

@@ -102,3 +102,6 @@
 # QtiMapper-Shim blobs
 /vendor/lib(64)?/vendor\.qti\.hardware\.display\.mappershim\.so                u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/android\.hardware\.graphics\.mappershim\.so                   u:object_r:same_process_hal_file:s0
+
+# NFC sku
+/sys/module/pn553/parameters/sku_support_nfc                                   u:object_r:nfc_sku:s0

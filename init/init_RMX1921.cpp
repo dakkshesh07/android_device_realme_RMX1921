@@ -50,6 +50,7 @@ void load_dalvikvm_properties() {
     property_override("dalvik.vm.heaptargetutilization", "0.5");
     property_override("dalvik.vm.heapminfree", "8m");
     property_override("dalvik.vm.heapmaxfree", "32m");
+    property_override("ro.config.low_ram", "false");
   } else {
     // from - phone-xhdpi-4096-dalvik-heap.mk
     property_override("dalvik.vm.heapstartsize", "8m");
@@ -58,6 +59,7 @@ void load_dalvikvm_properties() {
     property_override("dalvik.vm.heaptargetutilization", "0.6");
     property_override("dalvik.vm.heapminfree", "8m");
     property_override("dalvik.vm.heapmaxfree", "16m");
+    property_override("ro.config.low_ram", "true");
   }
 }
 

@@ -576,7 +576,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.ims.disableIMSLogs=1 \
     persist.vendor.ims.disableQXDMLogs=1 \
     persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.poweron_opt=1
+    persist.vendor.radio.poweron_opt=0
 
 # Thermal
 PRODUCT_PACKAGES += \

@@ -1031,15 +1031,14 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qgl.so
 vendor/lib/libCB.so
 vendor/lib/libOpenCL.so
-vendor/lib/libVkLayer_q3dtools.so
 vendor/lib/libadreno_app_profiles.so
 vendor/lib/libgpudataproducer.so
 vendor/lib/libkcl.so
 vendor/lib/libkernelmanager.so
 vendor/lib/libllvm-qcom.so
+vendor/lib/libllvm-qgl.so
 vendor/lib64/libCB.so
 vendor/lib64/libOpenCL.so
-vendor/lib64/libVkLayer_q3dtools.so
 vendor/lib64/libadreno_app_profiles.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libkcl.so

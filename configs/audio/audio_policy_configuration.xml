@@ -105,7 +105,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
                 <mixPort name="immersive_out" role="source" flags="AUDIO_OUTPUT_FLAG_SPATIALIZER">
-                    <profile name="" format="AUDIO_FORMAT_PCM_FLOAT"
+                    <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
                 <mixPort name="deep_buffer" role="source"
@@ -374,11 +374,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <route type="mix" sink="FM"
                        sources="primary output"/>
                 <route type="mix" sink="BT SCO"
-                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx,immersive_out"/>
+                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx"/>
                 <route type="mix" sink="BT SCO Headset"
-                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx,immersive_out"/>
+                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx"/>
                 <route type="mix" sink="BT SCO Car Kit"
-                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx,immersive_out"/>
+                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx"/>
                 <route type="mix" sink="USB Device Out"
                        sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,hifi_playback,immersive_out"/>
                 <route type="mix" sink="USB Headset Out"

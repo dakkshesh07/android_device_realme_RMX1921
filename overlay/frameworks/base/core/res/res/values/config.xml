@@ -1371,4 +1371,7 @@
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
 
+    <!-- The default value for whether head tracking for spatial audio is enabled for a newly connected audio device -->
+   <bool name="config_spatial_audio_head_tracking_enabled_default">true</bool>
+
 </resources>

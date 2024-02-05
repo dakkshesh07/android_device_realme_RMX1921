@@ -1,5 +1,7 @@
 # Audio
 ro.audio.spatializer_enabled=true
+ro.audio.spatializer_transaural_enabled_default=false
+persist.vendor.audio.spatializer.speaker_enabled=true
 vendor.audio_hal.period_size=192
 persist.vendor.audio.ambisonic.capture=false
 persist.vendor.audio.ambisonic.auto.profile=false

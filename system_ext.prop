@@ -40,7 +40,7 @@ dalvik.vm.image-dex2oat-threads=8
 # Display
 ro.sf.lcd_density=420
 persist.vendor.display.lcd.panel=true
-vendor.display.comp_mask=2
+vendor.display.comp_mask=0
 ro.qualcomm.cabl=0
 ro.vendor.display.ad=1
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg

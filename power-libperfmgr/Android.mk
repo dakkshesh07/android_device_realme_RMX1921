@@ -54,11 +54,11 @@ ifneq ($(TARGET_TAP_TO_WAKE_NODE),)
     LOCAL_CFLAGS += -DTAP_TO_WAKE_NODE=\"$(TARGET_TAP_TO_WAKE_NODE)\"
 endif
 
-LOCAL_MODULE := android.hardware.power-service.oplus-libperfmgr
-LOCAL_INIT_RC := android.hardware.power-service.oplus-libperfmgr.rc
+LOCAL_MODULE := android.hardware.power-service.RMX1921-libperfmgr
+LOCAL_INIT_RC := android.hardware.power-service.RMX1921-libperfmgr.rc
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
-LOCAL_VINTF_FRAGMENTS := android.hardware.power-service.oplus.xml
+LOCAL_VINTF_FRAGMENTS := android.hardware.power-service.RMX1921.xml
 
 include $(BUILD_EXECUTABLE)
 

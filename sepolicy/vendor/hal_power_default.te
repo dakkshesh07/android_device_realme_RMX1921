@@ -25,6 +25,7 @@ allow hal_power_default {
   sysfs_kgsl
   sysfs_msm_subsys
   sysfs_scsi_host
+  sysfs_kprofiles
 }:{
   file
   lnk_file

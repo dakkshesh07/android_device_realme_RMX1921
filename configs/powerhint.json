@@ -276,6 +276,24 @@
       ]
     },
     {
+      "Name": "KprofilesMode",
+      "Path": "/sys/kernel/kprofiles/kp_mode",
+      "Values": [
+        "3",
+        "2",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "Name": "KprofilesAuto",
+      "Path": "/sys/module/kprofiles/parameters/auto_kp",
+      "Values": [
+        "1",
+        "0"
+      ]
+    },
+    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -366,6 +384,12 @@
       "Node": "CPUBWMinFreq",
       "Duration": 0,
       "Value": "2086"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "KprofilesMode",
+      "Duration": 0,
+      "Value": "2"
     },
     {
       "PowerHint": "LAUNCH",
@@ -482,6 +506,12 @@
       "Value": "1440000000"
     },
     {
+      "PowerHint": "LAUNCH",
+      "Node": "KprofilesMode",
+      "Duration": 3000,
+      "Value": "3"
+    },
+    {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "PowerHALRenderingState",
       "Duration": 0,
@@ -500,9 +530,21 @@
       "Value": "610000000"
     },
     {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "KprofilesMode",
+      "Duration": 0,
+      "Value": "3"
+    },
+    {
       "PowerHint": "DISPLAY_UPDATE_IMMINENT",
       "Node": "DisplayWakeup",
       "Duration": 60,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "Flipendo",
+      "Node": "KprofilesAuto",
+      "Duration": 0,
       "Value": "1"
     },
     {

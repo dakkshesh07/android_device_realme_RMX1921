@@ -1,4 +1,4 @@
-service vendor.power-hal-aidl /vendor/bin/hw/android.hardware.power-service.oplus-libperfmgr
+service vendor.power-hal-aidl /vendor/bin/hw/android.hardware.power-service.RMX1921-libperfmgr
     class hal
     user root
     group system

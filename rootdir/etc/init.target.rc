@@ -196,6 +196,8 @@ on property:sys.boot_completed=1
     write /dev/cpuctl/camera-daemon/cpu.uclamp.min 50
     write /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive 1
 
+    setprop vendor.powerhal.init 1
+
 on boot
     chown system system /sys/class/leds/red/blink
     chown system system /sys/class/leds/green/blink

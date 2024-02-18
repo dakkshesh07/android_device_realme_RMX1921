@@ -56,7 +56,7 @@ on init
     chown system system /sys/class/devfreq/soc:qcom,gpubw/min_freq
     chown system system /sys/class/devfreq/soc:qcom,cpubw/min_freq
     chown system system /sys/class/devfreq/soc:qcom,l3-cpu0/min_freq
-    chown system system /sys/class/devfreq/soc:qcom,cpu4-cpu-l3-lat/min_freq
+    chown system system /sys/class/devfreq/soc:qcom,l3-cpu6/min_freq
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup
     chown system system /sys/class/kgsl/kgsl-3d0/force_rail_on
     chown system system /sys/class/kgsl/kgsl-3d0/force_clk_on
@@ -69,7 +69,7 @@ on init
     chmod 0664 /sys/class/devfreq/soc:qcom,gpubw/min_freq
     chmod 0664 /sys/class/devfreq/soc:qcom,cpubw/min_freq
     chmod 0664 /sys/class/devfreq/soc:qcom,l3-cpu0/min_freq
-    chmod 0664 /sys/class/devfreq/soc:qcom,cpu4-cpu-l3-lat/min_freq
+    chmod 0664 /sys/class/devfreq/soc:qcom,l3-cpu6/min_freq
     chmod 0664 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup
     chmod 0664 /sys/class/kgsl/kgsl-3d0/force_rail_on
     chmod 0664 /sys/class/kgsl/kgsl-3d0/force_clk_on

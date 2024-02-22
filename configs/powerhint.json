@@ -85,6 +85,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "CPUBigClusterGovernor",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor",
+      "Values": [
+        "schedutil",
+        "powersave"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "UclampTAMin",
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
       "Values": [
@@ -110,7 +119,7 @@
       "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
       "Values": [
         "0",
-        "30"
+        "50"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -263,9 +272,9 @@
       "Values": [
         "3",
         "2",
-        "1",
-        "0"
-      ]
+        "1"
+      ],
+      "ResetOnInit": true
     },
     {
       "Name": "KprofilesAuto",
@@ -273,7 +282,8 @@
       "Values": [
         "1",
         "0"
-      ]
+      ],
+      "ResetOnInit": true
     },
     {
       "Name": "PowerHALMainState",
@@ -416,16 +426,16 @@
       "Value": "9999999"
     },
     {
-      "PowerHint": "LAUNCH",
-      "Node": "UclampTAMin",
-      "Duration": 3000,
-      "Value": "50"
+      "PowerHint": "INTERACTIVE",
+      "Node": "CPUBigClusterGovernor",
+      "Duration": 0,
+      "Value": "schedutil"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "UclampFgMin",
       "Duration": 3000,
-      "Value": "30"
+      "Value": "50"
     },
     {
       "PowerHint": "LAUNCH",
@@ -510,6 +520,12 @@
       "Node": "DisplayWakeup",
       "Duration": 60,
       "Value": "1"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "UclampTAMin",
+      "Duration": 0,
+      "Value": "0"
     },
     {
       "PowerHint": "Flipendo",

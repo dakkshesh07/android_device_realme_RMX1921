@@ -91,7 +91,7 @@ ro.iorapd.enable=false
 iorapd.readahead.enable=false
 
 # Media
-media.settings.xml=/vendor/etc/media_profiles.xml
+media.settings.xml=/vendor/etc/media_profiles_V1_0.xml
 ro.media.recorder-max-base-layer-fps=60
 
 # Memory optimizations

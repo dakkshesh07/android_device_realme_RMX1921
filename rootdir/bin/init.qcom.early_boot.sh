@@ -390,11 +390,6 @@ case "$target" in
                 else
                     setprop vendor.display.lcd_density 640
                 fi
-
-                sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc1/sku_version` 2> /dev/null
-                if [ $sku_ver -eq 1 ]; then
-                    setprop vendor.media.target.version 1
-                fi
                 ;;
         esac
         ;;
